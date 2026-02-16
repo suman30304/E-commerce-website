@@ -133,11 +133,37 @@ body {
   cursor: pointer;
 }
 
-.sidebar ul li.active,
+/* ================= SMART SIDEBAR HOVER ================= */
+
+/* Normal state */
+.sidebar ul li {
+  transition: all 0.25s ease;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Default active */
+.sidebar ul li.active {
+  background: #e8f0ff;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* When sidebar is hovered, remove active style */
+.sidebar:hover ul li.active {
+  background: transparent;
+  color: #000;
+  font-weight: 400;
+}
+
+/* Hovered item (gets highlight instead) */
 .sidebar ul li:hover {
   background: #e8f0ff;
   color: #2563eb;
+  font-weight: 600;
+  padding-left: 18px;
 }
+
 
 /* Hero */
 .hero {
@@ -1136,7 +1162,199 @@ body {
 .sidebar ul li:hover::before {
   opacity: 1;
 }
+/* ================= NAV DROPDOWN ================= */
 
+.nav-left {
+  display: flex;
+  gap: 18px;
+}
+
+/* Wrapper */
+.nav-item {
+  position: relative;
+}
+
+/* Links */
+.nav-item > a {
+  padding: 6px 8px;
+  display: block;
+  transition: 0.2s;
+}
+
+.nav-item > a:hover {
+  color: #2563eb;
+}
+
+/* Dropdown box */
+.dropdown {
+  position: absolute;
+  top: 130%;
+  left: 0;
+
+  background: #fff;
+  min-width: 160px;
+
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  list-style: none;
+  padding: 6px 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: 0.25s;
+  z-index: 999;
+}
+
+/* Items */
+.dropdown li {
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background: #f1f5ff;
+  color: #2563eb;
+}
+
+/* Show on hover */
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* ================= SEARCH BAR EFFECT ================= */
+
+.search-bar {
+  transition: all 0.3s ease;
+}
+
+/* Hover glow */
+.search-bar:hover {
+  box-shadow: 0 0 0 3px rgba(79,124,255,0.15);
+}
+
+/* Focus inside */
+.search-bar:focus-within {
+  border-color: #2563eb;
+  box-shadow:
+    0 0 0 4px rgba(79,124,255,0.25),
+    0 6px 15px rgba(79,124,255,0.2);
+}
+
+/* Dropdown inside search */
+.search-bar select {
+  cursor: pointer;
+}
+
+.search-bar select:hover {
+  background: #f5f8ff;
+}
+
+/* ================= SEARCH BAR SEPARATOR ================= */
+
+/* Add line between input and select */
+.search-bar input {
+  border-right: 1px solid #d1d5db; /* Light gray line */
+}
+
+/* On hover/focus make it blue */
+.search-bar:focus-within input {
+  border-right: 1px solid #2563eb;
+}
+/* ================= HEADER DROPDOWNS ================= */
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Wrapper */
+.nav-select {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Selected */
+.nav-selected {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-selected img {
+  width: 20px;
+  height: auto;
+}
+
+/* Hover */
+.nav-selected:hover {
+  background: #f1f5ff;
+  color: #2563eb;
+}
+
+/* Dropdown box */
+.nav-dropdown {
+  position: absolute;
+  right: 0;
+  top: 130%;
+
+  background: #fff;
+  min-width: 180px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+
+  list-style: none;
+  padding: 6px 0;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: 0.25s;
+
+  z-index: 999;
+}
+
+/* Items */
+.nav-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-dropdown li img {
+  width: 20px;
+}
+
+/* Hover item */
+.nav-dropdown li:hover {
+  background: #f1f5ff;
+  color: #2563eb;
+}
+
+/* Show on hover */
+.nav-select:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 
 
