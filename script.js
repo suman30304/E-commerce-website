@@ -22,3 +22,24 @@ setInterval(() => {
 
 }, 1000);
 
+/* Make header dropdowns selectable */
+
+// Language
+const langSelected = document.getElementById("lang-selected");
+const langOptions = document.querySelectorAll("#lang-select .nav-dropdown li");
+
+langOptions.forEach(item => {
+  item.addEventListener("click", () => {
+    langSelected.innerHTML = item.innerHTML + " <span>▾</span>";
+  });
+});
+
+// Ship To
+const shipSelected = document.getElementById("ship-selected");
+const shipOptions = document.querySelectorAll("#ship-select .nav-dropdown li");
+
+shipOptions.forEach(item => {
+  item.addEventListener("click", () => {
+    shipSelected.innerHTML = item.innerHTML + " <span>▾</span>";
+  });
+});
