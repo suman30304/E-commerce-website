@@ -456,7 +456,11 @@ body {
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
+
+  position: relative;   /* NEW */
+  z-index: 2;           /* NEW */
 }
+
 
 .category-banner img {
   position: absolute;
