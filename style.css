@@ -435,7 +435,7 @@ body {
 /* LEFT BANNER */
 .category-banner {
   width: 260px;
-  padding: 30px 20px;
+  padding: 20px 25px;
   background: #f6f0dc;
   position: relative;
 }
@@ -448,10 +448,15 @@ body {
 .category-banner h3 {
   font-size: 20px;
   margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .category-banner button {
-  padding: 8px 14px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+
   border: none;
   border-radius: 8px;
   background: #fff;
@@ -462,12 +467,20 @@ body {
 }
 
 
+/* Banner background image */
 .category-banner img {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 160px;
+  inset: 0;                 /* fill whole box */
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;       /* cover like background */
+
+  opacity: 0.9;            /* soft look */
+
+  z-index: 0;              /* stay behind text */
 }
+
 
 /* GRID */
 .category-grid {
@@ -479,7 +492,7 @@ body {
 .item {
   border-left: 1px solid #e5e7eb;
   border-top: 1px solid #e5e7eb;
-  padding: 22px;
+  padding: 15px;
   position: relative;
   min-height: 130px;
   border: 1px solid #e5e7eb;
@@ -497,9 +510,10 @@ body {
 
 .item img {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  max-width: 70px;
+  bottom: 1.5px;
+  right: 1.5px;
+  max-width: 80px;
+  
 }
 /* ================= Inquiry Section ================= */
 
@@ -1376,5 +1390,26 @@ body {
   transform: translateY(0);
 }
 
+/* ================= CATEGORY ITEM TEXT FIX ================= */
+
+.category-grid .item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+/* Price text */
+.category-grid .item p {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.3;
+}
+
+/* Make "From" and price on separate lines */
+.category-grid .item p {
+  display: flex;
+  flex-direction: column;
+}
 
 
