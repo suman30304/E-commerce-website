@@ -141,7 +141,7 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url("assets/image/backgrounds/Banner-board.png");
+  background-image: url("assets/Image/backgrounds/Banner-board.png");
   background-size: cover;
   background-position: center;
 
@@ -1136,6 +1136,7 @@ body {
 .sidebar ul li:hover::before {
   opacity: 1;
 }
+
 
 
 
