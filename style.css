@@ -389,7 +389,7 @@ body {
   background: #fff;
   margin-bottom: 30px;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #e5e7eb;
 }
 
@@ -440,6 +440,8 @@ body {
   padding: 22px;
   position: relative;
   min-height: 130px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
 }
 
 .item h4 {
@@ -967,6 +969,7 @@ body {
 
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
+    overflow: visible;
   }
 }
 /* Mobile Sidebar Animation */
@@ -1000,4 +1003,138 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ================= HOVER EFFECT (Glow + Lift) ================= */
+
+/* Deals products */
+.product,
+.item,
+.recommended-item,
+.service-card,
+.supplier {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Main hover effect */
+.product:hover,
+.item:hover,
+.recommended-item:hover,
+.service-card:hover,
+.supplier:hover {
+  transform: translateY(-6px) scale(1.02); /* Pull up + slight zoom */
+  border-color: #4f7cff;
+
+  box-shadow:
+    0 10px 25px rgba(79, 124, 255, 0.25),
+    0 0 12px rgba(79, 124, 255, 0.4); /* Glow */
+
+  z-index: 10;
+}
+
+/* Extra glow border */
+.product:hover::after,
+.item:hover::after,
+.recommended-item:hover::after,
+.service-card:hover::after,
+.supplier:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid rgba(79, 124, 255, 0.6);
+  pointer-events: none;
+}
+
+/* ================= FORM HOVER EFFECT ================= */
+
+/* Whole form card hover */
+.inquiry-card {
+  transition: all 0.3s ease;
+}
+
+.inquiry-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 30px rgba(79,124,255,0.25),
+    0 0 15px rgba(79,124,255,0.3);
+}
+
+/* Input / textarea / select hover */
+.inquiry-card input,
+.inquiry-card textarea,
+.inquiry-card select {
+  transition: all 0.25s ease;
+}
+
+/* On mouse hover */
+.inquiry-card input:hover,
+.inquiry-card textarea:hover,
+.inquiry-card select:hover {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 2px rgba(79,124,255,0.15);
+}
+
+/* On focus (when typing) */
+.inquiry-card input:focus,
+.inquiry-card textarea:focus,
+.inquiry-card select:focus {
+  outline: none;
+  border-color: #4f7cff;
+
+  box-shadow:
+    0 0 0 3px rgba(79,124,255,0.25),
+    0 4px 10px rgba(79,124,255,0.2);
+}
+
+/* Button hover */
+.inquiry-card button {
+  transition: all 0.25s ease;
+}
+
+/* Button effect */
+.inquiry-card button:hover {
+  background: #3b66f5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79,124,255,0.35);
+}
+
+/* Button click effect */
+.inquiry-card button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(79,124,255,0.2);
+}
+
+/* ================= SIDEBAR HOVER ================= */
+
+.sidebar ul li {
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.sidebar ul li:hover {
+  background: #e8f0ff;
+  color: #2563eb;
+  padding-left: 18px;
+  font-weight: 500;
+}
+
+/* Left blue indicator */
+.sidebar ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #2563eb;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.sidebar ul li:hover::before {
+  opacity: 1;
+}
+
 
