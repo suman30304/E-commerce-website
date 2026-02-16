@@ -7,48 +7,63 @@
 </head>
 <body>
 
-<!-- Top Header -->
-<header class="mobile-header">
-  <div class="header-top">
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
+<!-- Top Header (DESKTOP STYLE like image) -->
+<header class="desktop-header">
+  <div class="header-row">
     <div class="brand">
-      <img src="assets/Image/backgrounds/Banner-board-800x420 2.png" alt="logo">
-      <span>Brand</span>
+      <img src="assets/Layout/Brand/logo-colored.png" alt="logo">
+      
     </div>
 
-    <div class="header-icons">
-      <span>🛒</span>
-      <span>👤</span>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <select>
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+      </select>
+      <button>Search</button>
+    </div>
+
+    <div class="header-actions">
+      <div class="action">
+        <span>👤</span>
+        <small>Profile</small>
+      </div>
+      <div class="action">
+        <span>💬</span>
+        <small>Message</small>
+      </div>
+      <div class="action">
+        <span>❤️</span>
+        <small>Orders</small>
+      </div>
+      <div class="action">
+        <span>🛒</span>
+        <small>My cart</small>
+      </div>
     </div>
   </div>
 
-  <div class="search-box">
-    <input type="text" placeholder="Search">
-  </div>
+  <div class="nav-row">
+    <div class="nav-left">
+      <span class="burger">☰</span>
+      <a href="#">All category</a>
+      <a href="#">Hot offers</a>
+      <a href="#">Gift boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu item</a>
+      <a href="#">Help ▾</a>
+    </div>
 
-  <div class="categories">
-    <span class="active">All category</span>
-    <span>Gadgets</span>
-    <span>Clothes</span>
-    <span>Accessories</span>
+    <div class="nav-right">
+      <span>English, USD ▾</span>
+      <span>Ship to 🇩🇪 ▾</span>
+    </div>
   </div>
 </header>
 
-
-<!-- Navigation -->
-<nav class="main-nav">
-  <a href="#">All category</a>
-  <a href="#">Hot offers</a>
-  <a href="#">Gift boxes</a>
-  <a href="#">Projects</a>
-  <a href="#">Menu item</a>
-  <a href="#">Help</a>
-</nav>
+<!-- ======== BELOW CODE AS IT IS (tumhara original) ======== -->
 
 <!-- Main Layout -->
 <main class="container">
@@ -91,15 +106,57 @@
 
 <!-- Deals Section -->
 <section class="deals">
-  <h3>Deals and offers</h3>
-  <div class="countdown" id="countdown"></div>
 
-  <div class="products">
-    <div class="product"><img src="assets/Image/tech/8.png"/>Smart watches<br><span>-25%</span></div>
-    <div class="product"><img src="assets/Image/tech/image 34.png"/>Laptops<br><span>-15%</span></div>
-    <div class="product"><img src="assets/Image/tech/6.png"/>Cameras<br><span>-40%</span></div>
-    <div class="product"><img src="assets/Image/tech/image 29.png"/>Headphones<br><span>-25%</span></div>
-    <div class="product"><img src="assets/Image/tech/image 23.png"/>Canon cameras<br><span>-25%</span></div>
+  <div class="deals-wrapper">
+
+    <!-- LEFT SIDE -->
+    <div class="deals-info">
+      <h3>Deals and offers</h3>
+      <p>Hygiene equipments</p>
+
+      <div class="countdown" id="countdown">
+        <div><span>04</span>Days</div>
+        <div><span>13</span>Hour</div>
+        <div><span>34</span>Min</div>
+        <div><span>56</span>Sec</div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE PRODUCTS -->
+    <div class="products">
+
+      <div class="product">
+        <img src="assets/Image/tech/8.png" />
+        <h4>Smart watches</h4>
+        <span>-25%</span>
+      </div>
+
+      <div class="product">
+        <img src="assets/Image/tech/image 34.png" />
+        <h4>Laptops</h4>
+        <span>-15%</span>
+      </div>
+
+      <div class="product">
+        <img src="assets/Image/tech/6.png" />
+        <h4>Cameras</h4>
+        <span>-40%</span>
+      </div>
+
+      <div class="product">
+        <img src="assets/Image/tech/image 29.png" />
+        <h4>Headphones</h4>
+        <span>-25%</span>
+      </div>
+
+      <div class="product">
+        <img src="assets/Image/tech/image 23.png" />
+        <h4>Canon cameras</h4>
+        <span>-25%</span>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
