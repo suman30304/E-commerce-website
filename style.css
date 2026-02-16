@@ -1042,21 +1042,25 @@ body {
   position: relative;
 }
 
-/* Main hover effect */
+/* Hover: gray border + light background */
 .product:hover,
 .item:hover,
 .recommended-item:hover,
 .service-card:hover,
 .supplier:hover {
-  transform: translateY(-6px) scale(1.02); /* Pull up + slight zoom */
-  border-color: #4f7cff;
 
-  box-shadow:
-    0 10px 25px rgba(79, 124, 255, 0.25),
-    0 0 12px rgba(79, 124, 255, 0.4); /* Glow */
+  transform: none; /* No movement */
 
-  z-index: 10;
+  border: 2px solid #9ca3af; /* Prominent gray border */
+
+  background: #f9fafb; /* Light gray background */
+
+  box-shadow: none;
+
+  z-index: 1;
 }
+
+
 
 /* Extra glow border */
 .product:hover::after,
