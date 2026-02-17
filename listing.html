@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace UI</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Top Header (DESKTOP STYLE like image) -->
+<header class="desktop-header">
+  <div class="header-row">
+    <div class="brand">
+      <img src="assets/Layout/Brand/logo-colored.png" alt="logo">
+      
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <select>
+        <option>All category</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+      </select>
+      <button>Search</button>
+    </div>
+
+    <div class="header-actions">
+      <div class="action">
+        <span>👤</span>
+        <small>Profile</small>
+      </div>
+      <div class="action">
+        <span>💬</span>
+        <small>Message</small>
+      </div>
+      <div class="action">
+        <span>❤️</span>
+        <small>Orders</small>
+      </div>
+      <div class="action">
+        <span>🛒</span>
+        <small>My cart</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <div class="nav-left">
+      <span class="burger">☰</span>
+      <a href="#">All category</a>
+      <a href="#">Hot offers</a>
+      <a href="#">Gift boxes</a>
+      <a href="#">Projects</a>
+      <a href="#">Menu item</a>
+      <a href="#">Help ▾</a>
+    </div>
+   <div class="nav-right">
+      <span class="dropdown">
+        <span class="drop-btn">English, USD ▾</span>
+        <div class="drop-menu">
+          <a href="#">English, USD</a>
+          <a href="#">Deutsch, EUR</a>
+        </div>
+      </span>
+      <span class="dropdown">
+        <span class="drop-btn">Ship to 🇩🇪 ▾</span>
+        <div class="drop-menu">
+          <a href="#">🇩🇪 Germany</a>
+          <a href="#">🇺🇸 USA</a>
+          <a href="#">🇵🇰 Pakistan</a>
+        </div>
+      </span>
+    </div>
+  </div>
+</header>
+<main class="listing-container">
+
+  <!-- Filters Sidebar -->
+  <aside class="filters">
+    <h4>Category</h4>
+    <ul>
+      <li class="active">Mobile accessory</li>
+      <li>Electronics</li>
+      <li>Smartphones</li>
+      <li>Modern tech</li>
+      <li><a href="#">See all</a></li>
+    </ul>
+
+    <h4>Brands</h4>
+    <label><input type="checkbox"> Samsung</label><br>
+    <label><input type="checkbox"> Apple</label><br>
+    <label><input type="checkbox"> Huawei</label><br>
+    <label><input type="checkbox"> Pocco</label><br>
+    <label><input type="checkbox"> Lenovo</label><br>
+    <a href="#">See all</a>
+
+     <h4>Features</h4>
+    <label><input type="checkbox"> Metallic</label><br>
+    <label><input type="checkbox"> Plastic cover</label><br>
+    <label><input type="checkbox"> 8GB Ram</label><br>
+    <label><input type="checkbox"> Super power</label><br>
+    <label><input type="checkbox"> Large Memory</label><br>
+    <a href="#">See all</a>
+
+    <hr>
+
+<div class="filter-section">
+  <div class="filter-head">
+    <strong>Price range</strong>
+    <span class="arrow">▴</span>
+  </div>
+
+  <input type="range" min="0" max="100000" value="50000" class="price-range-single">
+
+  <div class="price-fields">
+    <div>
+      <small>Min</small>
+      <input type="number" placeholder="0">
+    </div>
+    <div>
+      <small>Max</small>
+      <input type="number" placeholder="999999">
+    </div>
+  </div>
+
+  <button class="apply-btn-simple">Apply</button>
+</div>
+
+<hr>
+
+<div class="filter-section">
+  <div class="filter-head">
+    <strong>Condition</strong>
+    <span class="arrow">▴</span>
+  </div>
+
+  <label><input type="radio" name="cond" checked> Any</label><br>
+  <label><input type="radio" name="cond"> Refurbished</label><br>
+  <label><input type="radio" name="cond"> Brand new</label><br>
+  <label><input type="radio" name="cond"> Old items</label>
+</div>
+
+<hr>
+
+<div class="filter-section">
+  <div class="filter-head">
+    <strong>Ratings</strong>
+    <span class="arrow">▴</span>
+  </div>
+
+  <label><input type="checkbox"> <span class="stars">★★★★★</span></label><br>
+  <label><input type="checkbox"> <span class="stars">★★★★☆</span></label><br>
+  <label><input type="checkbox"> <span class="stars">★★★☆☆</span></label><br>
+  <label><input type="checkbox"> <span class="stars">★★☆☆☆</span></label>
+</div>
+  </aside>
+  <!-- Products List -->
+  <section class="listing">
+    <div class="listing-header">
+      <strong>12,911 items in Mobile accessory</strong>
+      <div class="listing-actions">
+        <label><input type="checkbox" checked> Verified only</label>
+        <select>
+          <option>Featured</option>
+          <option>Lowest price</option>
+          <option>Top rated</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="listing-card">
+      <img src="assets/Image/tech/image 33.png" alt="">
+      <div class="listing-info">
+        <h4>Canon Camera EOS 2000D, Black 10x zoom</h4>
+        <div class="price">$998.00 <del>$1128.00</del></div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+  <div class="listing-card">
+      <img src="assets/Image/tech/image 23.png" alt="">
+      <div class="listing-info">
+        <h4>Canon Camera EOS 2000D, Black 10x zoom</h4>
+        <div class="price">$998.00 <del>$1128.00</del></div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+  <div class="listing-card">
+      <img src="assets/Image/tech/image 32.png" alt="">
+      <div class="listing-info">
+        <h4>Canon Camera EOS 2000D, Black 10x zoom</h4>
+        <div class="price">$998.00 <del>$1128.00</del></div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+    <!-- Duplicate cards as needed -->
+    <div class="listing-card">
+      <img src="assets/Image/tech/image 34.png" alt="">
+      <div class="listing-info">
+        <h4>GoPro HERO6 4K Action Camera - Black</h4>
+        <div class="price">$998.00</div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+       <div class="listing-card">
+      <img src="assets/Image/tech/8.png" alt="">
+      <div class="listing-info">
+        <h4>GoPro HERO6 4K Action Camera - Black</h4>
+        <div class="price">$998.00</div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+     <div class="listing-card">
+      <img src="assets/Image/tech/image 86.png" alt="">
+      <div class="listing-info">
+        <h4>GoPro HERO6 4K Action Camera - Black</h4>
+        <div class="price">$998.00</div>
+        <div class="meta">⭐⭐⭐⭐☆ 7.5 • 154 orders • <span class="free">Free Shipping</span></div>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+        <a href="#">View details</a>
+      </div>
+      <button class="like-btn">♡</button>
+    </div>
+        <!-- Pagination -->
+    <div class="pagination">
+      <button>‹</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>›</button>
+    </div>
+  </section>
+
+</main>
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+  <h2>Subscribe on our newsletter</h2>
+  <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+
+  <div class="newsletter-form">
+    <input type="email" placeholder="Email">
+    <button>Subscribe</button>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Brand</h3>
+      <p>Best information about the companies here but now lorem ipsum is</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Find store</a>
+      <a href="#">Categories</a>
+      <a href="#">Blogs</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Partnership</h4>
+      <a href="#">About Us</a>
+      <a href="#">Find store</a>
+      <a href="#">Categories</a>
+      <a href="#">Blogs</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Information</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Money Refund</a>
+      <a href="#">Shipping</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>For users</h4>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <a href="#">Settings</a>
+      <a href="#">My Orders</a>
+    </div>
+
+  </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
