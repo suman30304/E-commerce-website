@@ -122,4 +122,34 @@
     }
   });
 })();
+document.getElementById('gridBtn').classList.remove('active');
+document.getElementById('listBtn').classList.remove('active');
+
+if (view === 'grid') {
+  document.getElementById('gridBtn').classList.add('active');
+} else {
+  document.getElementById('listBtn').classList.add('active');
+}
+
+el.className = 'item col-md-' + count1;
+items.forEach(el => {
+  if (view === 'grid') {
+    el.className = 'item';   // no bootstrap cols
+  } else {
+    el.className = 'item col-md-' + count1;
+  }
+});
+
+document.querySelectorAll('.cont2').forEach(el => {
+  el.className = view === 'grid' ? 'cont2' : 'cont2 col-md-' + count;
+});
+
+document.querySelectorAll('.cont3').forEach(el => {
+  el.className = view === 'grid' ? 'cont3' : 'cont3 col-md-' + count2;
+});
+
+document.querySelectorAll('.cont4').forEach(el => {
+  el.className = view === 'grid' ? 'cont4' : 'cont4 col-md-' + count3;
+});
+
 
