@@ -204,34 +204,7 @@ img {
   background: #fff;
 }
 
-/* ===== Send request left text fix ===== */
 
-.snd-bg {
-  align-items: left; /* vertically center content */
-}
-
-/* Left text column */
-.snd-bg .col-lg-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Title */
-.snd-bg .u-ce5e1895 {
-  max-width: 480px;      /* limit width */
-  line-height: 1.25;
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-/* Paragraph */
-.snd-bg .u-d14110f1 {
-  max-width: 420px;
-  line-height: 1.6;
-  font-size: 15px;
-  opacity: 0.9;
-}
 /* ===== FIX SEND REQUEST OVERLAP ===== */
 
 .snd-bg {
