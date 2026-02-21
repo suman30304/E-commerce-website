@@ -1179,8 +1179,34 @@ input {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 385px;
 }
+/* Only Home & Outdoor Banner */
+.home-banner {
+  height: 300px;     /* change freely */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.home-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fix Source Now button background size */
+.home-banner .btn,
+.u-d85c4e64 .btn {
+  display: inline-block !important;   /* important */
+  padding: 10px 24px !important;      /* controls size */
+  min-width: 120px;                   /* optional */
+  text-align: center;
+  line-height: normal;
+}
+
+
+
 .u-d87ebd85 { float: left; margin-left: 10px; }
 .u-da7330ff { padding-left: 20px; }
 .u-db3b3887 { float: right; }
