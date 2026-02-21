@@ -1,549 +1,1044 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marketplace UI</title>
-  <link rel="stylesheet" href="style.css" />
+
+    <title>Marketplace UI</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
 </head>
+
 <body>
 
-<!-- Top Header (DESKTOP STYLE like image) -->
-<header class="desktop-header">
-  <div class="header-row">
-    <div class="brand">
-      <img src="assets/Layout/Brand/logo-colored.png" alt="logo">
-      
-    </div>
-
-    <div class="search-bar">
-      <input type="text" placeholder="Search">
-      <select>
-        <option>All category</option>
-        <option>Electronics</option>
-        <option>Fashion</option>
-      </select>
-      <button>Search</button>
-    </div>
-
-    <div class="header-actions">
-      <div class="action">
-        <span>👤</span>
-        <small>Profile</small>
-      </div>
-      <div class="action">
-        <span>💬</span>
-        <small>Message</small>
-      </div>
-      <div class="action">
-        <span>❤️</span>
-        <small>Orders</small>
-      </div>
-      <div class="action">
-        <span>🛒</span>
-        <small>My cart</small>
-      </div>
-    </div>
-  </div>
-
-  <div class="nav-row">
-    <div class="nav-left">
-
-  <span class="burger">☰</span>
-
-  <div class="nav-item">
-    <a href="#">All category</a>
-    <ul class="dropdown">
-      <li>Electronics</li>
-      <li>Fashion</li>
-      <li>Home</li>
-      <li>Sports</li>
-    </ul>
-  </div>
-
-  <div class="nav-item">
-    <a href="#">Hot offers</a>
-    <ul class="dropdown">
-      <li>Today's Deals</li>
-      <li>Flash Sale</li>
-      <li>Clearance</li>
-    </ul>
-  </div>
-
-  <div class="nav-item">
-    <a href="#">Gift boxes</a>
-    <ul class="dropdown">
-      <li>Birthday</li>
-      <li>Wedding</li>
-      <li>Festival</li>
-    </ul>
-  </div>
-
-  <div class="nav-item">
-    <a href="#">Projects</a>
-    <ul class="dropdown">
-      <li>Construction</li>
-      <li>IT Solutions</li>
-      <li>Design</li>
-    </ul>
-  </div>
-
-  <div class="nav-item">
-    <a href="#">Menu item</a>
-    <ul class="dropdown">
-      <li>Option 1</li>
-      <li>Option 2</li>
-      <li>Option 3</li>
-    </ul>
-  </div>
-
-  <div class="nav-item">
-    <a href="#">Help</a>
-    <ul class="dropdown">
-      <li>Support</li>
-      <li>FAQs</li>
-      <li>Contact</li>
-    </ul>
-  </div>
-
-</div>
-
-
-    <div class="nav-right">
-
-  <!-- Language & Currency -->
-  <div class="nav-select" id="lang-select">
-  <div class="nav-selected" id="lang-selected">
-
-      English, USD <span>▾</span>
-    </div>
-
-    <ul class="nav-dropdown">
-
-      <li>English, USD</li>
-      <li>Deutsch, EUR</li>
-      <li>Français, EUR</li>
-      <li>中文, CNY</li>
-      <li>العربية, AED</li>
-
-    </ul>
-  </div>
-
-
-  <!-- Ship To -->
-  <div class="nav-select" id="ship-select">
-  <div class="nav-selected" id="ship-selected">
-
-      Ship to
-      <img src="assets/Layout1/Image/flags/DE@2x.png" alt="">
-      Germany <span>▾</span>
-    </div>
-
-    <ul class="nav-dropdown">
-
-      <li>
-        <img src="assets/Layout1/Image/flags/US@2x.png"> United States
-      </li>
-
-      <li>
-        <img src="assets/Layout1/Image/flags/GB@2x.png"> United Kingdom
-      </li>
-
-      <li>
-        <img src="assets/Layout1/Image/flags/FR@2x.png"> France
-      </li>
-
-      <li>
-        <img src="assets/Layout1/Image/flags/CN@2x.png"> China
-      </li>
-
-      <li>
-        <img src="assets/Layout1/Image/flags/AE@2x.png"> UAE
-      </li>
-
-    </ul>
-  </div>
-
-</div>
-
-  </div>
-</header>
-
-<!-- ======== BELOW CODE AS IT IS (tumhara original) ======== -->
-
-<!-- Main Layout -->
-<main class="container">
-
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <ul>
-      <li class="active">Automobiles</li>
-      <li>Clothes and wear</li>
-      <li>Home interiors</li>
-      <li>Computer and tech</li>
-      <li>Tools & equipment</li>
-      <li>Sports and outdoor</li>
-      <li>Animal and pets</li>
-      <li>Machinery tools</li>
-      <li>More category</li>
-    </ul>
-  </aside>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Latest trending</h2>
-      <h1>Electronic items</h1>
-      <button>Learn more</button>
-    </div>
-  </section>
-
-  <!-- Login Card -->
-  <aside class="login-card">
-    <p>Hi, user<br />let’s get stated</p>
-    <button class="primary">Join now</button>
-    <button class="secondary">Log in</button>
-
-    <div class="promo orange">Get US $10 off<br />with a new supplier</div>
-    <div class="promo teal">Send quotes with<br />supplier preferences</div>
-  </aside>
-
-</main>
-
-<!-- Deals Section -->
-<section class="deals">
-
-  <div class="deals-wrapper">
-
-    <!-- LEFT SIDE -->
-    <div class="deals-info">
-      <h3>Deals and offers</h3>
-      <p>Hygiene equipments</p>
-
-      <div class="countdown" id="countdown">
-        <div><span>04</span>Days</div>
-        <div><span>13</span>Hour</div>
-        <div><span>34</span>Min</div>
-        <div><span>56</span>Sec</div>
-      </div>
-    </div>
-
-    <!-- RIGHT SIDE PRODUCTS -->
-    <div class="products">
-
-      <div class="product">
-        <img src="assets/Image/tech/8.png" />
-        <h4>Smart watches</h4>
-        <span>-25%</span>
-      </div>
-
-      <div class="product">
-        <img src="assets/Image/tech/image 34.png" />
-        <h4>Laptops</h4>
-        <span>-15%</span>
-      </div>
-
-      <div class="product">
-        <img src="assets/Image/tech/6.png" />
-        <h4>Cameras</h4>
-        <span>-40%</span>
-      </div>
-
-      <div class="product">
-        <img src="assets/Image/tech/image 29.png" />
-        <h4>Headphones</h4>
-        <span>-25%</span>
-      </div>
-
-      <div class="product">
-        <img src="assets/Image/tech/image 23.png" />
-        <h4>Canon cameras</h4>
-        <span>-25%</span>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!--Home Decor-->
-<section class="category-section">
-
-  <!-- ROW 1 -->
-  <div class="category-row">
-
-    <div class="category-banner">
-      <h3>Home and <p>outdoor</p></h3>
-      <button>Source now</button>
-      <img src="assets/Image/backgrounds/Group 969.png" alt="">
-    </div>
-
-    <div class="category-grid">
-      <div class="item"><h4>Soft chairs</h4><p>From</p><p> USD 19</p><img src="assets/Image/interior/1.png"></div>
-      <div class="item"><h4>Sofa & chair</h4><p>From</p><p> USD 19</p><img src="assets/Image/interior/6.png"></div>
-      <div class="item"><h4>Kitchen dishes</h4><p>From</p><p> USD 19</p><img src="assets/Image/interior/image 93.png"></div>
-      <div class="item"><h4>Smart watches</h4><p>From</p><p> USD 19</p><img src="assets/Image/interior/3.png"></div>
-      <div class="item"><h4>Kitchen mixer</h4><p>From</p><p> USD 100</p><img src="assets/Image/interior/9.png"></div>
-      <div class="item"><h4>Blenders</h4><p>From</p><p> USD 39</p><img src="assets/Image/interior/8.png"></div>
-      <div class="item"><h4>Home appliance</h4><p>From</p><p> USD 19</p><img src="assets/Image/interior/7.png"></div>
-      <div class="item"><h4>Coffee maker</h4><p>From</p><p> USD 10</p><img src="assets/Image/interior/image 89.png"></div>
-    </div>
-
-  </div>
-
-  <!-- ROW 2 -->
-  <div class="category-row">
-
-    <div class="category-banner blue">
-      <h3>Consumer <p>electronics and</p> gadgets</h3>
-      <button>Source now</button>
-      <img src="assets/Image/backgrounds/image 98.png" alt="">
-    </div>
-
-    <div class="category-grid">
-      <div class="item"><h4>Smart watches</h4><p>From</p><p> USD 19</p><img src="assets/Image/tech/8.png"></div>
-      <div class="item"><h4>Cameras</h4><p>From</p><p> USD 89</p><img src="assets/Image/tech/6.png"></div>
-      <div class="item"><h4>Headphones</h4><p>From</p><p> USD 10</p><img src="assets/Image/tech/image 86.png"></div>
-      <div class="item"><h4>Smart watches</h4><p>From</p><p> USD 90</p><img src="assets/image/tech/image 85.png"></div>
-      <div class="item"><h4>Gaming set</h4><p>From</p><p> USD 35</p><img src="assets/Image/tech/image 29.png"></div>
-      <div class="item"><h4>Laptops & PC</h4><p>From</p><p> USD 340</p><img src="assets/Image/tech/image 34.png"></div>
-      <div class="item"><h4>Smartphones</h4><p>From</p><p> USD 19</p><img src="assets/Image/tech/image 32.png"></div>
-      <div class="item"><h4>Electric kettle</h4><p>From</p><p> USD 240</p><img src="assets/Image/tech/image 33.png"></div>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="inquiry-section">
-
-  <div class="inquiry-wrapper">
-
-    <!-- LEFT CONTENT -->
-    <div class="inquiry-left">
-      <h1>An easy way to send requests to all suppliers</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt.
-      </p>
-    </div>
-
-    <!-- RIGHT FORM CARD -->
-    <div class="inquiry-card">
-      <h3>Send quote to suppliers</h3>
-
-      <form>
-        <input type="text" placeholder="What item you need?" />
-
-        <textarea placeholder="Type more details"></textarea>
-
-        <div class="form-row">
-          <input type="number" placeholder="Quantity" />
-          <select>
-            <option>Pcs</option>
-            <option>Kg</option>
-            <option>Box</option>
-          </select>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                    <a class="navbar-brand"><img src="assets/logo-colored.png" alt="Brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input class="form-control search-nav" type="search" placeholder="Search" aria-label="Search"/>
+                        <div class="btn-group drp-dwn">
+                            <button
+                                class="btn dropdown-toggle dd"
+                                type="button"
+                                id="triggerId"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                All Categories
+                            </button>
+                            <div
+                                class="dropdown-menu dropdown-menu-start"
+                                aria-labelledby="triggerId"
+                            >
+                                <a class="dropdown-item" href="/page2.html">Electronics</a>
+                                <a class="dropdown-item" href="/page2.html">Fashion</a>
+                               
+                                <a class="dropdown-item" href="/page2.html">Clothes and wear</a>
+                             
+                                <a class="dropdown-item" href="/page2.html">Tools, equipments</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-nav" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Profile.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Message.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Orders.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="page4.html">
+                                <img src="assets/Cart.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid border p-2">
+            <div class="container p-0">
+                <div class="row align-items-center">
+                    <!-- Left Navigation -->
+                    <div class="col-lg-8">
+                        <nav>
+                            <ul class="nav justify-content-center flex-wrap">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownCategories"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/Vector.png" alt=""> All Categories
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownCategories">
+                                        <a class="dropdown-item" href="page2.html">Automobiles</a>
+                                        <a class="dropdown-item disabled" href="page2.html">Clothes and wear</a>
+             
+                                        <a class="dropdown-item" href="page2.html">Tools & equipment</a>
+         
+                                        <a class="dropdown-item" href="page2.html">Home interiors</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="page2.html">Hot offers</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdowngift"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                    Gift boxes
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdowngift">
+                                        <a class="dropdown-item" href="page2.html">Birthday</a>
+                                        <a class="dropdown-item" href="page2.html">Wedding</a>
+             
+                                        <a class="dropdown-item" href="page2.html">Anniversary</a>
+         
+                                        <a class="dropdown-item" href="page2.html">Valentine's Day</a>
+                                        <a class="dropdown-item" href="page2.html">Christmas</a>
+                                        <a class="dropdown-item" href="page2.html">New Year</a>
+                                        <a class="dropdown-item" href="page2.html">Other</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdowngift"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdowngift">
+                                        <a class="dropdown-item" href="page2.html">Construction</a>
+                                        <a class="dropdown-item" href="page2.html">IT</a>
+             
+                                        <a class="dropdown-item" href="page2.html">Design</a>
+         
+                                        <a class="dropdown-item" href="page2.html">Marketing</a>
+                                        <a class="dropdown-item" href="page2.html">Other</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdowngift"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                    Menu Item
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdowngift">
+                                        <a class="dropdown-item" href="page2.html">Option 1</a>
+                                        <a class="dropdown-item" href="page2.html">Option 2</a>
+             
+                                        <a class="dropdown-item" href="page2.html">Option 3</a>
+         
+                                
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownHelp"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Help
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownHelp">
+                                        <a class="dropdown-item" href="#">Support</a>
+                                        <a class="dropdown-item" href="#">FAQs</a>
+                                       
+                                        <a class="dropdown-item" href="#">Contact</a>
+       
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right Options -->
+                    <div class="col-lg-4">
+                        <nav>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownLanguage"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        English, USD
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                        <h6 class="dropdown-header">Language & currency</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/flag2.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, USD
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            Français, EUR
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            العربية، AED
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, GBP
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            中文, CNY
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownShipping"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Ship to <img src="assets/flag1.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownShipping">
+                                        <h6 class="dropdown-header">Choose region</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/US@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United States
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Arab Emirates
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            France
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            China
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Kingdom
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <button type="submit">Send inquiry</button>
-      </form>
-    </div>
+    </header>
 
-  </div>
+    <main class="u-45f6f351">
 
-</section>
+        <!-- Categories -->
+        <section class="u-822d04e9">
+            <div class="container sects">
+                <div class="row">
+                    <!-- Category -->
+                    <div class="col-lg-3">
+                        <div class="row">
+                            <ul class="catg-list">
+                                <li class="txt2"><a class="txt" href="page2.html">Automobiles</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Clothes&nbsp;and&nbsp;wear</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Home&nbsp;interiors</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Computer&nbsp;and&nbsp;Tech</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Tools,&nbsp;equipments</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Sports&nbsp;and&nbsp;outdoor</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Animal&nbsp;and&nbsp;pets</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">Machinery&nbsp;tools</a></li>
+                                <li class="txt2"><a class="txt" href="page2.html">More&nbsp;category</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Learn more -->
+                    <div class="col-lg-7">
+                        <div class="row u-d85c4e64">
+                            <img src="assets/Banner-board-800x420 2.png" alt="">
+                            <div class="u-76fdb142">
+                                <p class="u-19c4d5d9">Latest trending</p>
+                                <p class="u-f660a47e">Electronic
+                                    items</p>
+                                <a name="" id="" class="btn btn-light" href="#footer" role="button">Learn more</a>
 
-<!--Recommended Items-->
-<section class="Recommended">
-  <h1>Recommended Items</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Login -->
+                    <div class="col-lg-2 dis">
+                        <div class="row">
+                            <div class="col-md-12 u-dfd8c90d" >
+                                <div class="row u-09a03481">
+                                    <div class="col-md-12 log">
+                                        <img src="assets/Avatar.png" class="rec-img" alt="">
+                                        <p class="u-405c8fdd">
+                                            Hi, user let's get started
+                                        </p>
+                                    </div>
+                                    <div class="col-md-12 u-5c7efbdd">
+                                        <div class="row">
+                                            <div class="btn btn-primary align-items-center u-ac3fd8d4">
+                                                <p class="u-98891ad3">Join now</p>
+                                            </div>
+                                        </div>
+                                        <div class="row u-84d7b951">
+                                            <div class="btn btn-light align-items-center">
+                                                <p class="u-fbde1c7a">
+                                                    Login
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 u-35062396" >
+                                <div class="row">
+                                    <p class="u-cc606479" >
+                                        Get US $10 off <br> with a new <br> supplier
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 u-a08d9121" >
+                                <div class="row">
+                                    <p class="u-cc606479">
+                                        Send quotes with <br> supplier <br> preferences
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="Recommended-Grid">
+        <!-- Deals and offers -->
+        <section>
+            <div class="container sects2">
+                <div class="row">
+                    <div class="col-lg-3 sects3" >
+                        <p class="u-a0ba1604">Deals and offers</p>
+                        <p class="u-b1d5cc25">Hygiene equipments</p>
+                        <div class="row">
+                            <div class="col-2 p-1">
+                                <div class="timer-box">
+                                    <p class="u-0035cb90" id="days">04</p>
+                                    <p class="u-86c6e76d">Days</p>
+                                </div>
+                            </div>
+                            <div class="col-2 p-1">
+                                <div class="timer-box">
+                                    <p class="u-0035cb90" id="hours">13</p>
+                                    <p class="u-86c6e76d">Hour</p>
+                                </div>
+                            </div>
+                            <div class="col-2 p-1">
+                                <div class="timer-box">
+                                    <p class="u-0035cb90" id="mins">34</p>
+                                    <p class="u-86c6e76d">Min</p>
+                                </div>
+                            </div>
+                            <div class="col-2 p-1">
+                                <div class="timer-box">
+                                    <p class="u-0035cb90" id="secs">56</p>
+                                    <p class="u-86c6e76d">Sec</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row deal-cont">
+                            <div class="sects3" >
+                                <img src="assets/image 35.png" class="rec-img" alt="">
+                                <p class="d-txt text-center">
+                                    Smart watches</p>
+                                <div class="u-cfbbfd5a">
+                                    <p class="deal-txt">
+                                        -25%</p>
+                                </div>
+                            </div>
+                            <div class="sects3">
+                                <img src="assets/image 28.png" class="rec-img" alt="">
+                                <p class="d-txt text-center mt-5">
+                                    GoPro cameras</p>
+                                <div class="u-cfbbfd5a">
+                                    <p class="deal-txt">
+                                        -40%</p>
+                                </div>
+                            </div>
+                            <div class="sects3">
+                                <img src="assets/image 29.png" class="rec-img" alt="">
+                                <p class="d-txt text-center">
+                                    Headphones</p>
+                                <div class="u-cfbbfd5a">
+                                    <p class="deal-txt">
+                                        -25%</p>
+                                </div>
+                            </div>
+                            <div class="sects3">
+                                <img src="assets/image 23.png" class="rec-img" alt="">
+                                <p class="d-txt text-center mt-4">
+                                    Mobile phones</p>
+                                <div class="u-cfbbfd5a">
+                                    <p class="deal-txt">
+                                        -15%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/Bitmap.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Home and outdoor -->
+        <section class="u-822d04e9">
+            <div class="container sects2">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="row u-d85c4e64">
+                            <img src="assets/image 92.png" class="dis u-160b1c5e" alt="">
+                            <p class="home-txt">
+                                Home and outdoor</p>
+                            <a name="" id="" class="btn btn-light dis u-c3ecb21a" href="#" role="button">Source now</a>
+                    
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row deal-cont">
+                            <!-- 1 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Soft chairs</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Sofa and chair</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/image 94.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Kitchen dishes</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-f5bc57f8" src="assets/image 93.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-4cb82338">
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Smart Watches</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/image 90.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Kitchen mixer</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 100</p>
+                                        <img class="u-1901a4f4" src="assets/image 88.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Blenders</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 39</p>
+                                        <img class="u-1901a4f4" src="assets/image 87.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-20153103">
+                                            Home appliance</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/rasm.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-f8772321">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Coffee maker</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 10</p>
+                                        <img class="u-1901a4f4" src="assets/image 89.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a name="" id="" class="btn btn-light dis3" href="#" role="button">Source&nbsp;now&nbsp;&rarr;</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/2 1.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Electronics and gadgets -->
+        <section class="u-822d04e9">
+            <div class="container sects2">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="row u-d85c4e64">
+                            <img src="assets/image 98.png" class="dis u-160b1c5e" alt="">
+                            <p class="home-txt">
+                                Consumer products and electronics</p>
+                            <a name="" id="" class="btn btn-light dis u-2ce3043a" href="#" role="button">Source now</a>
+                    
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="row deal-cont">
+                            <!-- 1 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Smart watches</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/8.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Sofa and chair</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/6.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Kitchen dishes</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-f5bc57f8" src="assets/image 86.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-4cb82338">
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Smart Watches</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/image 85.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Kitchen mixer</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 100</p>
+                                        <img class="u-1901a4f4" src="assets/5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-57b078a5">
+                                            Blenders</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 39</p>
+                                        <img class="u-1901a4f4" src="assets/7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-1cbf1f3d" >
+                                        <p class="d-txt z-1 u-20153103">
+                                            Home appliance</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 19</p>
+                                        <img class="u-1901a4f4" src="assets/image 32.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="home-item p-0">
+                                <div class="p-0 u-d85c4e64">
+                                    <div class="home-bord u-f8772321">
+                                        <p class="d-txt z-1 u-20153103">
+                                            Coffee maker</p>
+                                        <p class="d-txt z-1 u-120f4c5c" >
+                                            From <br> USD 10</p>
+                                        <img class="u-1901a4f4" src="assets/image 33.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a name="" id="" class="btn btn-light dis3" href="#" role="button">Source&nbsp;now&nbsp;&rarr;</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/image 30.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Send requests and quotes -->
+        <section class="u-822d04e9">
+            <div class="container u-b84ca25a">
+                <div class="row snd-bg">
+                    <!-- Send request -->
+                    <div class="col-lg-4">
+                        <h2 class="u-ce5e1895">An easy way to send requests to all suppliers
+                        </h2>
+                        <p class="dis u-d14110f1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <!-- Send quote -->
+                    <div class="col-md-5 p-4 text-black dis2">
+                        <div class="row">
+                            <form action="">
+                                <h4 class="dis">Send quote to suppliers</h4>
+                                <p class="dis u-43d0bc3f" >
+                                    What item you need?</p>
+                                <textarea class="dis u-027ef66e" name="" placeholder="Type more details" id=""></textarea>
+                                <div class="col-md-12 dis u-84d7b951">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <p class="u-1705a610" >
+                                                Quantity</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <a name="" id="dropdownId" class="btn dropdown-toggle u-7fca73cc" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pcs</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                                <a class="dropdown-item" href="#">First Dropdown</a>
+                                                <a class="dropdown-item" href="#">Second Dropdown</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a name="" id="" class="btn btn-primary u-ffb82397" href="#" role="button">Send inquiry</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/image 24.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Recommended items -->
+        <section>
+            <div class="container">
+                <h3 class="u-6b697891">Recommended items</h3>
+                <div class="row grid-cont" id="recommend">
+                    <!-- 1 -->
+                    <div class="rec-box">
+                        <img src="assets/Bitmap2.png" class="rec-img" alt="">
+                        <p class="u-9125e475">$10.30</p>
+                        <p class="u-e651a70a">T-shirts with multiple <br> colors, for men</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/image 26.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Extra services -->
+        <section class="u-32c16dc4">
+            <div class="container">
+                <div class="row">
+                    <h3 class="u-6c4e8fc6">Our extra services</h3>
+                    <!-- 1 -->
+                    <div class="col-md-3 u-4b161baf">
+                        <div class="u-0743609b">
+                            <img class="u-199b6f0e" src="assets/image 108.png" alt="">
+                        </div>
+                        <div class="u-5a9698a8">
+                            <p class="u-c4263abf">Source from <br> industry Hubs</p>
+                        </div>
+                        <button class="serv-btn">
+                            <img class="u-9476c825" src="assets/Vector1.png" alt="">
+                        </button>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-md-3 u-d85c4e64">
+                        <div class="u-0743609b">
+                            <img class="u-199b6f0e" src="assets/image 104.png" alt="">
+                        </div>
+                        <div class="u-5a9698a8">
+                            <p class="u-c4263abf">Customize your <br> products</p>
+                        </div>
+                        <button class="serv-btn">
+                            <img class="u-9476c825" src="assets/Vector2.png" alt="">
+                        </button>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-md-3 u-d85c4e64">
+                        <div class="u-0743609b">
+                            <img class="u-199b6f0e" src="assets/image 106.png" alt="">
+                        </div>
+                        <div class="u-5a9698a8">
+                            <p class="u-c4263abf">Fast, reliable shipping <br> by ocean or air</p>
+                        </div>
+                        <button class="serv-btn">
+                            <img class="u-9476c825" src="assets/Vector3.png" alt="">
+                        </button>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-md-3 u-d85c4e64">
+                        <div class="u-0743609b">
+                            <img class="u-199b6f0e" src="assets/image 107.png" alt="">
+                        </div>
+                        <div class="u-5a9698a8">
+                            <p class="u-c4263abf">Product monitoring <br> and inspection</p>
+                        </div>
+                        <button class="serv-btn">
+                            <img class="u-9476c825" src="assets/Vector4.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/Bitmap (2).png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+        <!-- Suppliers -->
+        <section>
+            <div class="container u-25d3b23f">
+                <div class="row">
+                    <h3 class="u-6b697891">Suppliers by region</h3>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <!-- 1 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/AE@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Arabic Emirates <br>
+                                <span class="u-efb59cb3">shopname.ae</span></p>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/AU@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Australia <br>
+                                <span class="u-efb59cb3">shopname.ae</span></p>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/US@2x.png" alt="">
+                                <p class="u-c7ae7bfd">United States <br>
+                                <span class="u-efb59cb3">shopname.ae</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <!-- 4 -->
+                            <div class="col-lg-6 my-2">
+                                <img class="u-a733a4d0" src="assets/RU@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Russia <br>
+                                <span class="u-efb59cb3">shopname.ru</span></p>
+                            </div>
+                            <!-- 5 -->
+                            <div class="col-lg-6 my-2">
+                                <img class="u-a733a4d0" src="assets/IT@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Italy <br>
+                                <span class="u-efb59cb3">shopname.it</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <!-- 1 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/DK@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Denmark <br>
+                                <span class="u-efb59cb3">denmark.com.pk</span></p>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/FR@2x.png" alt="">
+                                <p class="u-c7ae7bfd">France <br>
+                                <span class="u-efb59cb3">shopname.com.fr</span></p>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-lg-4 my-2">
+                                <img class="u-a733a4d0" src="assets/AE@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Arabic Emirates <br>
+                                <span class="u-efb59cb3">shopname.ae</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <!-- 4 -->
+                            <div class="col-lg-6 my-2">
+                                <img class="u-a733a4d0" src="assets/CN@2x.png" alt="">
+                                <p class="u-c7ae7bfd">China <br>
+                                <span class="u-efb59cb3">shopname.ae</span></p>
+                            </div>
+                            <!-- 5 -->
+                            <div class="col-lg-6 my-2">
+                                <img class="u-a733a4d0" src="assets/GB@2x.png" alt="">
+                                <p class="u-c7ae7bfd">Great Britain <br>
+                                <span class="u-efb59cb3">shopname.co.uk</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/tech/image 86.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+    </main>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/cloth/image 26.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+    <footer>
+        <!-- place footer here -->
+        <div class="align-items-center u-cd9bb948" id="footer">
+            <div class="text-center">
+                <h3 class="u-e2b74ba6">Subscribe on our newsletter</h3>
+                <p class="u-9760d36b">Get daily news on upcoming offers from many suppliers from all over the world
+                </p>
+                <form action="" method="post">
+                    <input class="u-44684266" type="email" placeholder="Email" >
+                    <a name="" id="" class="btn btn-primary u-2142cba8" href="#" role="button">Subscribe</a>
+                </form>
+            </div>
+        </div>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/logo-colored.png" alt="">
+                    <p class="u-07c308b0">Best information about the company gies here but now lorem ipsum is</p>
+                    <img src="assets/facebook3.png" class="p" alt="">
+                    <img src="assets/twitter3.png" class="p" alt="">
+                    <img src="assets/linkedin3.png" class="p" alt="">
+                    <img src="assets/instagram3.png" class="p" alt="">
+                    <img src="assets/youtube3.png" class="p" alt="">
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">About</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Partnership</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Information</h5>
+                    Help Center <br>
+                    Money Refund <br>
+                    SHipping <br>
+                    Contact us <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">For users</h5>
+                    Login <br>
+                    Register <br>
+                    Settings <br>
+                    My Orders <br>
+                </div>
+                <div class="col-md-1 u-6f01f015">
+                    <h5 class="u-42bfb508">Get app</h5>
+                    <img src="assets/market-button-appstore.png" class="p u-36eb4ced" alt="">
+                    <img src="assets/market-button-playstore.png" class="p u-36eb4ced" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="u-e90cbe91">
+            <div class="container">
+                <div class="row p-4">
+                    <div class="col-md-6 align-self-center">
+                        <p class="u-e2b74ba6">&copy; 2023 Ecommerce</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown u-db3b3887">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/flag2.png" alt=""> English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/interior/image 90.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-    <div class="recommended-item">
-      <img src="assets/Layout/alibaba/Image/tech/image 85.png">
-      <h4>$10.30</h4>
-      <p>T-shirt with multiple colours for men</p>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
-  </div>
-</section>
+    <script src="js/main.js"></script>
 
-<!-- ================= EXTRA SERVICES ================= -->
-<section class="extra-services">
-  <h2>Our extra services</h2>
+    <script>
 
-  <div class="services-grid">
+        class box {
+            constructor() {
+                this.state = {
+                    items: [
+                        {
+                            itemid: 1,
+                            title: "T-shirts with multiple colors, for men",
+                            price: '$10.30',
+                            imgurl: "assets/Bitmap2.png"
+                        },
+                        {
+                            itemid: 2,
+                            title: "Jeans shorts for men blue color",
+                            price: '$10.30',
+                            imgurl: "assets/21.png"
+                        },
+                        {
+                            itemid: 3,
+                            title: "Brown winter coat medium size",
+                            price: '$12.50',
+                            imgurl: "assets/image30.png"
+                        },
+                        {
+                            itemid: 4,
+                            title: "Jeans bag for travel for men",
+                            price: '$34.00',
+                            imgurl: "assets/image24.png"
+                        },
+                        {
+                            itemid: 5,
+                            title: "Leather wallet",
+                            price: '$99.00',
+                            imgurl: "assets/image26.png"
+                        },
+                        {
+                            itemid: 6,
+                            title: "Canon camera black, 100x zoom",
+                            price: '$9.99',
+                            imgurl: "assets/Bitmap.png"
+                        },
+                        {
+                            itemid: 7,
+                            title: "Headset for gaming with mic",
+                            price: '$8.99',
+                            imgurl: "assets/image862.png"
+                        },
+                        {
+                            itemid: 8,
+                            title: "Smartwatch silver color modern",
+                            price: '$10.30',
+                            imgurl: "assets/image26.png"
+                        },
+                        {
+                            itemid: 9,
+                            title: "Blue wallet for men leather metarfial",
+                            price: '$10.30',
+                            imgurl: "assets/image902.png"
+                        },
+                        {
+                            itemid: 10,
+                            title: "Jeans bag for travel for men",
+                            price: '$80.95',
+                            imgurl: "assets/image852.png"
+                        }
+                    ]
+                }
+            }
 
-    <div class="service-card">
-      <img src="assets/Image/backgrounds/Mask group.png" alt="">
-      <div class="service-content">
-        <p>Source from Industry Hubs</p>
-        <div class="icon-circle">🔍</div>
-      </div>
-    </div>
+            render() {
+                return this.state.items.map((el) => {
+                    return `<div class="rec-box">
+                                <img src=${el.imgurl} class="rec-img" alt="image">
+                                <p class="u-9125e475">${el.price}</p>
+                                <p class="u-e651a70a">${el.title}</p>
+                            </div>`
+                }).join('');
+            }
+        }
 
-    <div class="service-card">
-      <img src="assets/Image/backgrounds/Mask group (1).png" alt="">
-      <div class="service-content">
-        <p>Customize Your Products</p>
-        <div class="icon-circle">📦</div>
-      </div>
-    </div>
+        const mybox = new box()
+        document.getElementById('recommend').innerHTML = mybox.render()
 
-    <div class="service-card">
-      <img src="assets/Image/backgrounds/image 106.png" alt="">
-      <div class="service-content">
-        <p>Fast, reliable shipping by ocean or air</p>
-        <div class="icon-circle">✈️</div>
-      </div>
-    </div>
+        let duration = 60 * 60 * 24 * 4 + 13 * 60 * 60 + 34 * 60 + 56;
+        let time = duration;
 
-    <div class="service-card">
-      <img src="assets/Image/backgrounds/image 107.png" alt="">
-      <div class="service-content">
-        <p>Product monitoring and inspection</p>
-        <div class="icon-circle">🛡️</div>
-      </div>
-    </div>
+        function updateDisplay() {
+            const days = String(Math.floor(time / (60 * 60 * 24))).padStart(2, '0');
+            const hours = String(Math.floor((time % (60 * 60 * 24)) / 3600)).padStart(2, '0');
+            const minutes = String(Math.floor((time % 3600) / 60)).padStart(2, '0');
+            const seconds = String(time % 60).padStart(2, '0');
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('mins').textContent = minutes;
+            document.getElementById('secs').textContent = seconds;
+            }
+            setInterval(() => {
+            time--;
+            updateDisplay();
+            }, 1000);
 
-  </div>
-</section>
+    </script>
 
-
-<!-- ================= SUPPLIERS ================= -->
-<section class="suppliers">
-  <h2>Suppliers by region</h2>
-
-  <div class="suppliers-grid">
-
-    <div class="supplier"><img src="assets/Layout1/Image/flags/AE@2x.png" alt=""> Arabic Emirates<br><small>shopname.ae</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/icon.png"  alt=""> Australia<br><small>shopname.ae</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/US@2x.png" alt=""> United States<br><small>shopname.ae</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/RU@2x.png" alt=""> Russia<br><small>shopname.ru</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/IT@2x.png" alt=""> Italy<br><small>shopname.it</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/DK@2x.png" alt=""> Denmark<br><small>denmark.com.dk</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/FR@2x.png" alt=""> France<br><small>shopname.com.fr</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/CN@2x.png" alt=""> China<br><small>shopname.ae</small></div>
-    <div class="supplier"><img src="assets/Layout1/Image/flags/GB@2x.png" alt=""> Great Britain<br><small>shopname.co.uk</small></div>
-
-  </div>
-</section>
-
-
-<!-- ================= NEWSLETTER ================= -->
-<section class="newsletter">
-  <h2>Subscribe on our newsletter</h2>
-  <p>Get daily news on upcoming offers from many suppliers all over the world</p>
-
-  <div class="newsletter-form">
-    <input type="email" placeholder="Email">
-    <button>Subscribe</button>
-  </div>
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <h3>Brand</h3>
-      <p>Best information about the companies here but now lorem ipsum is</p>
-    </div>
-
-    <div class="footer-links">
-      <h4>About</h4>
-      <a href="#">About Us</a>
-      <a href="#">Find store</a>
-      <a href="#">Categories</a>
-      <a href="#">Blogs</a>
-    </div>
-
-    <div class="footer-links">
-      <h4>Partnership</h4>
-      <a href="#">About Us</a>
-      <a href="#">Find store</a>
-      <a href="#">Categories</a>
-      <a href="#">Blogs</a>
-    </div>
-
-    <div class="footer-links">
-      <h4>Information</h4>
-      <a href="#">Help Center</a>
-      <a href="#">Money Refund</a>
-      <a href="#">Shipping</a>
-      <a href="#">Contact us</a>
-    </div>
-
-    <div class="footer-links">
-      <h4>For users</h4>
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-      <a href="#">Settings</a>
-      <a href="#">My Orders</a>
-    </div>
-
-  </div>
-
-</footer>
-
-
-<script src="script.js"></script>
 </body>
+
 </html>
 

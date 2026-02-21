@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Ecommerce Web Design</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo-colored.png" alt="Brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input class="form-control search-nav" type="search" placeholder="Search" aria-label="Search" />
+                        <div class="btn-group drp-dwn">
+                            <button class="btn dropdown-toggle dd" type="button" id="triggerId"
+                                data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                All Categories
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-start" aria-labelledby="triggerId">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                <h6 class="dropdown-header">Section header</h6>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">After divider action</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-nav" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Profile.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Message.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Orders.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="page4.html">
+                                <img src="assets/Cart.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid border p-2">
+            <div class="container p-0">
+                <div class="row align-items-center">
+                    <!-- Left Navigation -->
+                    <div class="col-lg-8">
+                        <nav>
+                            <ul class="nav justify-content-center flex-wrap">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownCategories"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/Vector.png" alt=""> All Categories
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownCategories">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Hot offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Gift boxes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Menu item</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownHelp"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Help
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownHelp">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right Options -->
+                    <div class="col-lg-4">
+                        <nav>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownLanguage"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        English, USD
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                        <h6 class="dropdown-header">Language & currency</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/flag2.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, USD
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            Français, EUR
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            العربية، AED
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, GBP
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            中文, CNY
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownShipping"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Ship to <img src="assets/flag1.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownShipping">
+                                        <h6 class="dropdown-header">Choose region</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/US@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United States
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Arab Emirates
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            France
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            China
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Kingdom
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="u-45f6f351">
+        <div class="container">
+            <div class="row">
+                <nav class="u-fe7e287f" aria-label="breadcrumb">
+                    <ol class="breadcrumb u-e2b74ba6">
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="page3.html">Clothings</a></li>
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="page3.html">Men's wear</a></li>
+                        <li class="breadcrumb-item active u-ffa3a694" aria-current="page">
+                            Summer clothing</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <nav class="navbar bg-light d-lg-none my-2">
+                        <button class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-funnel me-2" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .4.8L10 8.333V13.5a.5.5 0 0 1-.724.447l-2-1A.5.5 0 0 1 7 12.5V8.333L1.6 1.8a.5.5 0 0 1-.1-.55z"/>
+                            </svg>
+                            Filter
+                        </button>
+                    </nav>
+
+                    <div class="collapse d-lg-block" id="sidebarMenu">
+                        <!-- 1 -->
+                        <div class="row u-d09b5d3a">
+                            <ul class="u-b7df6c84">
+                                <h6 class="u-8bdd01f4">Category</h6>
+                                <li class="u-194b571d">
+                                    <a class="u-8d3d3353" href="" >Mobile
+                                        accessory</a>
+                                </li>
+                                <li class="u-65c1c01e">
+                                    <a class="u-8d3d3353" href="" >Electronics</a>
+                                </li>
+                                <li class="u-65c1c01e">
+                                    <a class="u-8d3d3353" href="" >Smartphones</a>
+                                </li>
+                                <li class="u-65c1c01e">
+                                    <a class="u-8d3d3353" href="" >Modern
+                                        tech</a>
+                                </li>
+                                <p class="d-inline-flex gap-1">
+                                    <a class="btn u-edd1ff8b" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        See all
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <li>
+                                        <a class="u-8d3d3353" href="" >Automobiles</a>
+                                    </li>
+                                    <li class="u-65c1c01e">
+                                        <a class="u-8d3d3353" href="" >Clothes
+                                            and wear</a>
+                                    </li>
+                                    <li class="u-65c1c01e">
+                                        <a class="u-8d3d3353" href="" >Computer
+                                            and tech</a>
+                                    </li>
+                                    <li class="u-65c1c01e">
+                                        <a class="u-8d3d3353" href="" >Home
+                                            interiors</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- 2 -->
+                        <div class="row u-d09b5d3a">
+                            <ul class="u-b7df6c84">
+                                <h6 class="u-8bdd01f4">Brands</h6>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Samsung')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Samsung
+                                            </p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Apple')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Apple</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Huawei')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Huawei</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Poco')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Poco</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Lenovo')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Lenovo</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <p class="d-inline-flex gap-1">
+                                    <a class="btn u-edd1ff8b" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        See all
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Oppo')" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    Oppo</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="u-8ecca844">
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('OnePlus')" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    One plus</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="u-8ecca844">
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Vivo')" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    Vivo</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- 3 -->
+                        <div class="row u-d09b5d3a">
+                            <ul class="u-b7df6c84">
+                                <h6 class="u-8bdd01f4">Features</h6>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Metallic')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Metallic</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Plastic cover')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Plastic cover</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('8GB Ram')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                8GB Ram</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" onclick="add_feature('Super power')" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Super power</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Large Memory')" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkChecked">
+                                            <p class="u-34ef1d9b" >
+                                                Large Memory</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <p class="d-inline-flex gap-1">
+                                    <a class="btn u-edd1ff8b" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        See all
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('1TB Storage')" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    1TB Storage</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="u-8ecca844">
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" type="checkbox" onclick="add_feature('Display')" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    Display</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="u-8ecca844">
+                                        <div class="form-check">
+                                            <input class="form-check-input u-794ab30b" onclick="add_feature('Colors')" type="checkbox" value="" id="checkDefault">
+                                            <label class="form-check-label" for="checkChecked">
+                                                <p class="u-34ef1d9b" >
+                                                    Colors</p>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- 4 -->
+                        <div class="row u-d09b5d3a">
+                            <h6 class="u-02032323">Price range</h6>
+                            <div class="slider-container">
+                                <div class="range" id="range"></div>
+                                <input type="range" id="min" min="0" max="100" value="30">
+                                <input type="range" id="max" min="0" max="100" value="65">
+                            </div>
+                            <div class="values">
+                                Min: <input class="u-bc09c12f" type="number" id="min-input" min="0" max="100" value="50">
+                                Max: <input class="u-bc09c12f" type="number" id="max-input" min="0" max="100" value="50">
+                            </div>
+                            <div>
+                                <a name="" id="" class="btn btn-light w-75 u-9cad172a" href="#" role="button">Apply</a>
+                            </div>
+
+                        </div>
+                        <!-- 5 -->
+                        <div class="row u-82a75d76">
+                            <ul class="u-b7df6c84">
+                                <h6 class="u-8bdd01f4">Condition</h6>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-1050a703" type="radio" name="radioDefault" value="" id="radioDefault1" checked>
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <p class="u-34ef1d9b" >
+                                                Any</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-1050a703" type="radio" name="radioDefault" value="" id="radioDefault2">
+                                        <label class="form-check-label" for="radioDefault2">
+                                            <p class="u-34ef1d9b" >
+                                                Refurbished</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-1050a703" type="radio" name="radioDefault" value="" id="radioDefault3">
+                                        <label class="form-check-label" for="radioDefault3">
+                                            <p class="u-34ef1d9b" >
+                                                Brand new</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-1050a703" type="radio" name="radioDefault" value="" id="radioDefault4">
+                                        <label class="form-check-label" for="radioDefault4">
+                                            <p class="u-34ef1d9b" >
+                                                Old items</p>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 6 -->
+                        <div class="row u-d09b5d3a">
+                            <ul class="u-b7df6c84">
+                                <h6 class="u-8bdd01f4">Ratings</h6>
+                                <li class="u-8ecca844">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" onclick="add_feature('5 star')" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label">
+                                            <div class="star-rating2">
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-84d7b951">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-1050a703" onclick="add_feature('4 star')" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label">
+                                            <div class="star-rating2">
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-84d7b951">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" onclick="add_feature('3 star')" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label">
+                                            <div class="star-rating2">
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="u-84d7b951">
+                                    <div class="form-check">
+                                        <input class="form-check-input u-794ab30b" onclick="add_feature('2 star')" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label">
+                                            <div class="star-rating2">
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star active u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                                <span class="star u-68f53a63">&#9733;</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="u-189187c8" >
+                                <div class="row">
+                                    <div class="col-lg-5 u-a078b935">
+                                        <p class="u-7e5bd4e6">12,911 items in <span class="u-055bd024" >Mobile accessory</span></p>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-sm-4 p-0 u-a078b935">
+                                                <div class="form-check u-60fa28dd">
+                                                    <input class="form-check-input u-b53b2345" type="checkbox" value="" id="checkChecked" checked>
+                                                    <label class="form-check-label" for="checkChecked">
+                                                        <p class="u-643c34e5" >
+                                                            Verified only</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 p-0">
+                                                <div class="btn-group">
+                                                    <button class="btn dropdown-toggle u-7e304f85" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Featured
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-start"
+                                                        aria-labelledby="triggerId">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                                        <h6 class="dropdown-header">Section header</h6>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">After divider action</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 p-2 u-a078b935">
+                                                <img src="assets/Vector5.png" class="q u-af8835bb" onclick="setView('grid', '12', '4', '10', '2', 'none')" alt="">
+                                                <img src="assets/Vector6.png" class="q u-af8835bb" onclick="setView('list', '3', '12', '7', '2', 'block')" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex" id="features">
+                            <!-- null -->
+                        </div>
+                        <div class="container">
+                            <div id="greeting" class="row list-view">
+                            
+                                <!-- Class objects -->
+                            </div>
+                        </div>
+                        <nav class="u-04a80771" aria-label="Page navigation example" >
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link u-42bfb508">&laquo;</a>
+                                </li>
+                                <li class="page-item"><a class="page-link u-42bfb508" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link u-42bfb508" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link u-42bfb508" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link u-42bfb508" href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+        <div class="align-items-center u-cd9bb948">
+            <div class="text-center">
+                <h3 class="u-e2b74ba6">Subscribe on our newsletter</h3>
+                <p class="u-9760d36b">Get daily news on upcoming offers from many suppliers from all over the world
+                </p>
+                <form action="" method="post">
+                    <input class="u-44684266" type="email" placeholder="Email" >
+                    <a name="" id="" class="btn btn-primary u-2142cba8" href="#" role="button" >Subscribe</a>
+                </form>
+            </div>
+        </div>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/logo-colored.png" alt="">
+                    <p class="u-07c308b0">Best information about the company gies here but now lorem ipsum is</p>
+                    <img src="assets/facebook3.png" class="p" alt="">
+                    <img src="assets/twitter3.png" class="p" alt="">
+                    <img src="assets/linkedin3.png" class="p" alt="">
+                    <img src="assets/instagram3.png" class="p" alt="">
+                    <img src="assets/youtube3.png" class="p" alt="">
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">About</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Partnership</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Information</h5>
+                    Help Center <br>
+                    Money Refund <br>
+                    SHipping <br>
+                    Contact us <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">For users</h5>
+                    Login <br>
+                    Register <br>
+                    Settings <br>
+                    My Orders <br>
+                </div>
+                <div class="col-md-1 u-6f01f015">
+                    <h5 class="u-42bfb508">Get app</h5>
+                    <img src="assets/market-button-appstore.png" class="p u-36eb4ced" alt="">
+                    <img src="assets/market-button-playstore.png" class="p u-36eb4ced" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="u-e90cbe91">
+            <div class="container">
+                <div class="row p-4">
+                    <div class="col-md-6 align-self-center">
+                        <p class="u-e2b74ba6">&copy; 2023 Ecommerce</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown u-db3b3887">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/flag2.png" alt=""> English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        class box {
+            constructor() {
+                this.state = {
+                    items: [
+                        {
+                            itemid: 1,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image 332.png"
+                        },
+                        {
+                            itemid: 2,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image 322.png"
+                        },
+                        {
+                            itemid: 3,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image 342.png"
+                        },
+                        {
+                            itemid: 4,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image 352.png"
+                        },
+                        {
+                            itemid: 5,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image862.png"
+                        },
+                        {
+                            itemid: 6,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image852.png"
+                        },
+                        {
+                            itemid: 7,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image902.png"
+                        },
+                        {
+                            itemid: 8,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image_22-removebg-preview.png"
+                        },
+                        {
+                            itemid: 9,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image30.png"
+                        },
+                        {
+                            itemid: 10,
+                            title: "Canon Camera EOS 2000, Black 10x zoom",
+                            price: '$98.00',
+                            imgurl: "assets/image 332.png"
+                        },
+                    ]
+                }
+            }
+
+            render() {
+                return this.state.items.map((el) => {
+                    return `<div class="col-md-12 item">
+                                        <div class="u-792815f5">
+                                            <div class="row u-d85c4e64">
+                                                <div class="wish liveToastBtn" data-title="${el.title}" data-price="${el.title}" data-imgurl="${el.imgurl}" onclick="goToPage2(this)">
+                                                    <svg class="heart" viewBox="0 0 24 24" tabindex="0" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 21s-6.9-4.3-9.5-9.1C0.4 8.2 2.4 3.6 7 4.1c2.2.2 3.6 1.9 5 3.4 1.4-1.5 2.8-3.2 5-3.4 4.6-0.5 6.6 4.1 4.5 7.8C18.9 16.7 12 21 12 21z"/>
+                                                    </svg>
+                                                </div>
+                                                    <!-- Toast -->
+                                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                        <div class="toast-header">
+                                                        <img class="rounded me-2" alt="...">
+                                                        <strong class="me-auto">Bootstrap</strong>
+                                                        <small>11 mins ago</small>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="toast-body">
+                                                        Item saved
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="col-md-3 cont2 align-items-center d-flex" href="page3.html">
+                                                    <img src="${el.imgurl}" class="img-fluid u-54b734ad" alt=""/>
+                                                </a>
+                                                <div class="d-none overlay">
+
+                                                </div>
+                                                <div class="col-md-7 cont3">
+                                                    <p class="u-984fb323">${el.title}</p>
+                                                    <h4 class="u-755e8a26">${el.price} <span class="u-2fabe7fa" >$1128.00</span>
+                                                    </h4>
+                                                    <div class="d-flex">
+                                                        <div class="star-rating">
+                                                            <span class="star active" data-value="1">&#9733;</span>
+                                                            <span class="star active" data-value="2">&#9733;</span>
+                                                            <span class="star active" data-value="3">&#9733;</span>
+                                                            <span class="star active" data-value="4">&#9733;</span>
+                                                            <span class="star" data-value="5">&#9733;</span>
+                                                            <span class="u-5026c291" >7.5</span>
+                                                        </div>
+                                                        <span class="hide u-19770540" ><span class="u-4a66dbfa" >&bull;</span>
+                                                            154 orders <span class="u-4a66dbfa" >&bull;</span></span>
+                                                        <span class="hide u-7cbf8e4a" >Free
+                                                            Shipping</span>
+                                                    </div>
+                                                    <p class="hide view-txt2">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                                    <a class="hide view-txt" href="page3.html">
+                                                        View details</a>
+                                                </div>
+                                                <div class="col-md-2 cont4">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`
+                }).join('');
+            }
+        }
+
+        function goToPage2(element) {
+            const title = element.getAttribute("data-title");
+            const price = element.getAttribute("data-price");
+            const imgurl = element.getAttribute("data-imgurl");
+
+            localStorage.setItem("runFunction", "true");
+            localStorage.setItem("param_title", title);
+            localStorage.setItem("param_price", price);
+            localStorage.setItem("param_imgurl", imgurl);
+            const newItem = { title, price, imgurl };
+
+            // Get existing saved items or empty array
+            let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+
+            // Add new item
+            savedItems.push(newItem);
+            const alreadyExists = savedItems.some(item => item.imgurl === newItem.title);
+
+            if (alreadyExists) {
+                console.log("Item already saved.");
+                return; // abort adding
+            }
+            // Save back to localStorage
+            localStorage.setItem("savedItems", JSON.stringify(savedItems));
+            localStorage.setItem("runFunction", "true");
+
+            const toastTriggers = document.querySelectorAll('.liveToastBtn');
+            const toastLiveExample = document.getElementById('liveToast');
+
+            if (toastLiveExample) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+                toastBootstrap.show();
+            }
+        }   
+
+        const mybox = new box()
+        document.getElementById('greeting').innerHTML = mybox.render()
+
+
+        const minSlider = document.getElementById('min');
+        const maxSlider = document.getElementById('max');
+        const minInput = document.getElementById('min-input');
+        const maxInput = document.getElementById('max-input');
+        const range = document.getElementById('range');
+
+        function updateRange() {
+            let min = parseInt(minSlider.value);
+            let max = parseInt(maxSlider.value);
+
+            if (min > max) {
+                [min, max] = [max, min];
+            }
+
+            const percentMin = (min / 100) * 100;
+            const percentMax = (max / 100) * 100;
+
+            range.style.left = percentMin + 6 + '%';
+            range.style.width = (percentMax - percentMin) - 5 + '%';
+
+            minInput.value = min;
+            maxInput.value = max;
+        }
+
+        function updateFromInput() {
+            let min = parseInt(minInput.value);
+            let max = parseInt(maxInput.value);
+
+            if (min > max) {
+                min = max;
+            }
+            if (max < min) {
+                max = min;
+            }
+
+            minSlider.value = min;
+            maxSlider.value = max;
+            updateRange();
+        }
+
+        minSlider.addEventListener('input', updateRange);
+        maxSlider.addEventListener('input', updateRange);
+        minInput.addEventListener('input', updateFromInput);
+        maxInput.addEventListener('input', updateFromInput);
+
+        updateRange();
+
+        function setView(view, count, count1, count2, count3, display) {
+            const container = document.getElementById('greeting');
+            container.className = view + '-view row';
+
+            const items = container.querySelectorAll('.item');
+            const overlays = document.querySelectorAll('.overlay, .d-none');
+            const wishes = document.querySelectorAll('.wish, .wish2');
+
+            wishes.forEach(el => {
+                el.className = view === 'list' ? 'wish' : 'wish2';
+            });
+
+
+            for (let i = 0; i < overlays.length; i++) {
+
+                const element = overlays[i];
+
+                if (view === 'grid') {
+                    element.classList.remove('d-none');
+                    element.classList.add('overlay');
+                } else {
+                    element.classList.remove('overlay');
+                    element.classList.add('d-none');
+                }
+            }
+
+            // Set visible count based on view
+            const maxItems = view === 'list' ? 6 : 9;
+
+            items.forEach((item, index) => {
+                item.style.display = index < maxItems ? 'block' : 'none';
+            });
+
+            items.forEach(el => {
+                el.className = 'item col-md-' + count1;
+            });
+            document.querySelectorAll('.cont2').forEach(el => {
+                el.className = 'cont2 col-md-' + count;
+            });
+            document.querySelectorAll('.cont3').forEach(el2 => {
+                el2.className = 'cont3 col-md-' + count2;
+            });
+            document.querySelectorAll('.cont4').forEach(el3 => {
+                el3.className = 'cont4 col-md-' + count3;
+            });
+
+            document.querySelectorAll('.hide').forEach(el => {
+                el.style.display = display;
+            });
+        }
+
+        function add_feature(name) {
+            const container = document.getElementById('features');
+            const existing = container.querySelector(`[data-feature="${name}"]`);
+
+            if (existing) {
+                existing.remove();
+            } else {
+                const featureHTML = `
+                <div class="feature-item u-d7df7f2b" data-feature="${name}">
+                    <p class="feat-txt u-e2b74ba6">
+                    ${name} &nbsp; <span class="u-24b531c6" onclick="remove_feature('${name}')">&cross;</span>
+                    </p>
+                </div>
+                `;
+                container.insertAdjacentHTML('afterbegin', featureHTML);
+            }
+
+            // Manage the "Clear all filter" button
+            const hasItems = container.querySelectorAll('.feature-item').length > 0;
+            const clearBtn = container.querySelector('.clear-filter');
+
+            if (hasItems && !clearBtn) {
+                const clearAllHTML = `
+                <p class="feat-txt2 clear-filter" onclick="clear_all_features()">Clear all filter</p>
+                `;
+                container.insertAdjacentHTML('beforeend', clearAllHTML);
+            } else if (!hasItems && clearBtn) {
+                clearBtn.remove();
+            }
+        }
+
+        function remove_feature(name) {
+            const feature = document.querySelector(`[data-feature="${name}"]`);
+            if (feature) feature.remove();
+
+            // Hide "Clear all filter" if no items left
+            const hasItems = document.querySelectorAll('.feature-item').length > 0;
+            const clearBtn = document.querySelector('.clear-filter');
+            if (!hasItems && clearBtn) clearBtn.remove();
+        }
+
+        function clear_all_features() {
+            document.querySelectorAll('.feature-item').forEach(el => el.remove());
+            const clear = document.querySelector('.clear-filter');
+            if (clear) clear.remove();
+        }
+
+    </script>
+
+</body>
+
+</html>
+

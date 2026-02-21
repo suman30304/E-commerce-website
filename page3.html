@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Ecommerce Web Design</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo-colored.png" alt="Brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input class="form-control search-nav" type="search" placeholder="Search" aria-label="Search"/>
+                        <div class="btn-group drp-dwn">
+                            <button
+                                class="btn dropdown-toggle dd"
+                                type="button"
+                                id="triggerId"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                All Categories
+                            </button>
+                            <div
+                                class="dropdown-menu dropdown-menu-start"
+                                aria-labelledby="triggerId"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                <h6 class="dropdown-header">Section header</h6>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">After divider action</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-nav" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Profile.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Message.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Orders.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="page4.html">
+                                <img src="assets/Cart.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid border p-2">
+            <div class="container p-0">
+                <div class="row align-items-center">
+                    <!-- Left Navigation -->
+                    <div class="col-lg-8">
+                        <nav>
+                            <ul class="nav justify-content-center flex-wrap">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownCategories"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/Vector.png" alt=""> All Categories
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownCategories">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Hot offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Gift boxes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Menu item</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownHelp"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Help
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownHelp">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right Options -->
+                    <div class="col-lg-4">
+                        <nav>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownLanguage"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        English, USD
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                        <h6 class="dropdown-header">Language & currency</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/flag2.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, USD
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            Français, EUR
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            العربية، AED
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, GBP
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            中文, CNY
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownShipping"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Ship to <img src="assets/flag1.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownShipping">
+                                        <h6 class="dropdown-header">Choose region</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/US@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United States
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Arab Emirates
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            France
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            China
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Kingdom
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="u-45f6f351">
+        <!-- Breadcrumb -->
+        <div class="container">
+            <div class="row">
+                <nav class="u-fe7e287f" aria-label="breadcrumb">
+                    <ol class="breadcrumb u-e2b74ba6">
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="page2.html">Clothings</a></li>
+                        <li class="breadcrumb-item"><a class="u-913e1de1" href="page2.html">Men's wear</a></li>
+                        <li class="breadcrumb-item active u-ffa3a694" aria-current="page">
+                            Summer clothing</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Details section -->
+        <section class="u-3918df41">
+            <div class="container sects">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-md-12 sects u-41868844">
+                                <img class="u-ef751237" src="assets/image34s.png" id="main-image" alt="">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row grid-view">
+                                    <img src="assets/image 38s.png" class="t active u-9476c825" alt="">
+                                    
+                                    <img src="assets/image 35s.png" class="t u-9476c825" alt="">
+                                    
+                                    <img src="assets/image 40s.png" class="t u-9476c825" alt="">
+                                    
+                                    <img src="assets/image 36s.png" class="t u-9476c825" alt="">
+                                    
+                                    <img src="assets/image 37s.png" class="t u-9476c825" alt="">
+                                    
+                                    <img src="assets/image 39s.png" class="t u-9476c825" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row p-3">
+                            <p class="dis u-219e7eea"><span>&#10003;</span> In stock</p>
+                            <h4 class="dis u-e8e671fe">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h4>
+                            <div class="star-rating u-84d7b951">
+                                <span class="star active" data-value="1">&#9733;</span>
+                                <span class="star active" data-value="2">&#9733;</span>
+                                <span class="star active" data-value="3">&#9733;</span>
+                                <span class="star active" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                                <span class="u-3ec6a41a" >
+                                    <span class="u-4a66dbfa">&bull;</span>
+                                    <img src="assets/Vector8.png" alt=""> 32 reviews <span class="u-4a66dbfa">&bull;</span>
+                                    <img src="assets/Vector9.png" alt=""> 154 sold
+                                </span>
+                            </div>
+                            <div class="u-84d7b951">
+                                <div class="dis2">
+                                    <div class="row">
+                                        <div class="col-lg-4 dis3">
+                                            <h5 class="u-f152e0a8">$98.00</h5>
+                                            <p class="u-469502de">(50-100 pcs)</p>
+                                        </div>
+                                        <div class="col-lg-4 dis u-bf9fd056">
+                                            <h5 class="u-4f9d231c">$90.00</h5>
+                                            <p class="u-469502de">(100-700 pcs)</p>
+                                        </div>
+                                        <div class="col-lg-4 dis">
+                                            <h5 class="u-4f9d231c">$78.00</h5>
+                                            <p class="u-469502de">(700+ pcs)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-84d7b951">
+                                <div class="dis u-46628233">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <p class="u-db52320c">Price:</p>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p class="u-7a607394">Negotiable</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-46628233">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <p class="u-db52320c">Type:</p>
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="u-7a607394">Classical shoes</p>
+                                        </div>
+                                    </div>
+                                    <div class="row u-09a03481">
+                                        <div class="col-5">
+                                            <p class="u-db52320c">Material:</p>
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="u-7a607394">Plastic material</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <p class="u-db52320c">Design:</p>
+                                        </div>
+                                        <div class="col-7">
+                                            <p class="u-7a607394">Modern nice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dis u-ea17663b">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <p class="u-db52320c">Customization:</p>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p class="u-7a607394">Customized logo and design custom packages</p>
+                                        </div>
+                                    </div>
+                                    <div class="row u-09a03481">
+                                        <div class="col-md-5">
+                                            <p class="u-db52320c">Protection:</p>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p class="u-7a607394">Refund Policy</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <p class="u-db52320c">Warranty:</p>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p class="u-7a607394">2 years full warranty </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <div class="u-ab43e4c5">
+                            <div class="row">
+                                <div class="col-md-12 u-7e2c0c26">
+                                    <div class="row">
+                                        <div class="col-2 col-lg-3 p-0">
+                                            <div>
+                                                <span class="u-9205ec0d">R</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-10 col-lg-9">
+                                            <div class="row">
+                                                <div class="col-md-12 p-0">
+                                                    <p class="u-a79ccec7">Supplier</p>
+                                                </div>
+                                                <div class="col-md-12 p-0">
+                                                    <p class="u-a79ccec7">Guanjoi Trading LLC</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-4 u-07c308b0">
+                                   <p class="u-9caf0903"><img src="assets/flag1.png" alt=""> &nbsp; Germany, <span class="dis">Berlin</span></p>
+                                </div>
+                                <div class="col-lg-12 col-4 u-3837456d">
+                                   <p class="u-9caf0903"><img src="assets/Vector10.png" alt=""> &nbsp; Verified <span class="dis">Seller</span></p>
+                                </div>
+                                <div class="col-lg-12 col-4 dis4">
+                                   <p class="u-9caf0903"><img src="assets/Vector11.png" alt=""> &nbsp; Worldwide <span class="dis">shipping</span></p>
+                                </div>
+                                <div class="col-md-12 u-5c7efbdd">
+                                    <div class="row">
+                                        <button class="btn align-items-center u-ac3fd8d4">
+                                            <p class="u-e7b784a6">Send inquiry</p>
+                                        </button>
+                                    </div>
+                                    <div class="row dis u-68a09f73">
+                                        <button class="btn align-items-center u-a22afe33">
+                                            <p class="u-54a8bc40">
+                                                Sellerâ€™s profile
+                                            </p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button onclick="goToPage2()" class="liveToastBtn u-8813698f">
+                                <svg class="heart" viewBox="0 0 24 24" tabindex="0" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21s-6.9-4.3-9.5-9.1C0.4 8.2 2.4 3.6 7 4.1c2.2.2 3.6 1.9 5 3.4 1.4-1.5 2.8-3.2 5-3.4 4.6-0.5 6.6 4.1 4.5 7.8C18.9 16.7 12 21 12 21z"/>
+                                </svg> Save for later
+                            </button>
+                            <!-- Toast -->
+                            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                    <img class="rounded me-2" alt="...">
+                                    <strong class="me-auto">Bootstrap</strong>
+                                    <small>11 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                    Item saved
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description and reviews section -->
+        <section>
+            <div class="container dis">
+                <div class="row">
+                    <div class="col-md-9 sects2 u-6f09ab89">
+                        <div class="row">
+                            <div class="col-md-12 u-8bb3ec17">
+                                <button class="des active">Description</button>
+                                <button class="des">Reviews</button>
+                                <button class="des">Shipping</button>
+                                <button class="des">About seller</button>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="u-2b411277">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+                                    Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            </div>
+
+                            <!-- Model and style -->
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 det-txt1">
+                                        <p class="des2 bg">Model</p>
+                                    </div>
+                                    <div class="col-md-5 det-txt2">
+                                        <p class="des2">#8786867</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 det-txt1">
+                                        <p class="des2 bg">Style</p>
+                                    </div>
+                                    <div class="col-md-5 det-txt2">
+                                        <p class="des2">Classic style</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 det-txt1">
+                                        <p class="des2 bg">Certificate</p>
+                                    </div>
+                                    <div class="col-md-5 det-txt2">
+                                        <p class="des2">ISO-898921212</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 det-txt1">
+                                        <p class="des2 bg">Size</p>
+                                    </div>
+                                    <div class="col-md-5 det-txt2">
+                                        <p class="des2">34mm x 450mm x 19mm</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 det-txt1">
+                                        <p class="des2 bg">Memory</p>
+                                    </div>
+                                    <div class="col-md-5 det-txt2">
+                                        <p class="des2">36GB RAM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 u-194b571d">
+                                <p class="det-txt3">&#10003; &nbsp; Some great feature name here</p>
+                                <p class="det-txt3">&#10003; &nbsp; Lorem ipsum dolor sit amet, consectetur </p>
+                                <p class="det-txt3">&#10003; &nbsp; Duis aute irure dolor in reprehenderit</p>
+                                <p class="det-txt3">&#10003; &nbsp; Some great feature name here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- You may like -->
+                    <div class="col-md-3 u-da7330ff">
+                        <div class="sects2">
+                            <h6 class="u-5a9dff49">You may like</h6>
+                            <div class="col-md-12 u-7b8b1415">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-12 col-lg-4">
+                                        <div class="may-like">
+                                            <img class="u-ef751237" src="assets/image 302.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 col-md-12 col-lg-8 u-09a03481">
+                                        <p class="d-txt">Men Blazers Sets Elegant Formal</p>
+                                        <p class="u-7fe2f0ca">$7.00 - $99.50</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-12 col-lg-4">
+                                        <div class="may-like">
+                                            <img class="u-ef751237" src="assets/Bitmap3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 col-md-12 col-lg-8 u-09a03481">
+                                        <p class="d-txt">Men Shirt Sleeve Polo Contrast</p>
+                                        <p class="d-txt u-ffa3a694">$7.00 - $99.50</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-12 col-lg-4">
+                                        <div class="may-like">
+                                            <img class="u-ef751237" src="assets/2 12.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 col-md-12 col-lg-8 u-09a03481">
+                                        <p class="d-txt">Apple Watch Series Space Gray</p>
+                                        <p class="d-txt u-ffa3a694">$7.00 - $99.50</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-12 col-lg-4">
+                                        <div class="may-like">
+                                            <img class="u-ef751237" src="assets/image 252.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 col-md-12 col-lg-8 u-09a03481">
+                                        <p class="d-txt">Basketball Crew Socks Long Stuff</p>
+                                        <p class="d-txt u-ffa3a694">$7.00 - $99.50</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-12 col-lg-4">
+                                        <div class="may-like">
+                                            <img class="u-ef751237" src="assets/image 262.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8 col-md-12 col-lg-8 u-09a03481">
+                                        <p class="d-txt">New Summer Men's  castrol T-Shirts</p>
+                                        <p class="d-txt u-ffa3a694">$7.00 - $99.50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related products -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 sects2 u-4838df49">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="u-755e8a26">Related products</h4>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row grid-view">
+                                    <!-- 1 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-1f587875" src="assets/image242.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-1f587875" src="assets/image_35-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-86d2076f" src="assets/image_86-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-43df6a6d" src="assets/Bitmap-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-2a6e07c9" src="assets/image_85-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div>
+                                        <div class="rel-bg">
+                                            <img class="u-86d2076f" src="assets/rasm-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="col-md-12 u-9104b35a">
+                                            <p class="d-txt u-3fb27235">Xiaomi Redmi 8 <br> Original</p>
+                                            <p class="d-txt u-f7eb4caf">$32.00-$40.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Banner -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="promo-banner">
+                        <div class="promo-text">
+                            <h2>Super discount on more than 100 USD</h2>
+                            <p>Have you ever finally just write dummy info</p>
+                        </div>
+                        <button class="promo-button">Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/logo-colored.png" alt="">
+                    <p class="u-07c308b0">Best information about the company gies here but now lorem ipsum is</p>
+                    <img src="assets/facebook3.png" class="p" alt="">
+                    <img src="assets/twitter3.png" class="p" alt="">
+                    <img src="assets/linkedin3.png" class="p" alt="">
+                    <img src="assets/instagram3.png" class="p" alt="">
+                    <img src="assets/youtube3.png" class="p" alt="">
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">About</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Partnership</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Information</h5>
+                    Help Center <br>
+                    Money Refund <br>
+                    SHipping <br>
+                    Contact us <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">For users</h5>
+                    Login <br>
+                    Register <br>
+                    Settings <br>
+                    My Orders <br>
+                </div>
+                <div class="col-md-1 u-6f01f015">
+                    <h5 class="u-42bfb508">Get app</h5>
+                    <img src="assets/market-button-appstore.png" class="p u-36eb4ced" alt="">
+                    <img src="assets/market-button-playstore.png" class="p u-36eb4ced" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="u-e90cbe91">
+            <div class="container">
+                <div class="row p-4">
+                    <div class="col-md-6 align-self-center">
+                        <p class="u-e2b74ba6">&copy; 2023 Ecommerce</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown u-db3b3887">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/flag2.png" alt=""> English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        
+    <script src="js/main.js"></script>
+
+    <script>
+
+        function goToPage2() {
+            localStorage.setItem("runFunction2", "true");
+
+            const toastTriggers = document.querySelectorAll('.liveToastBtn');
+            const toastLiveExample = document.getElementById('liveToast');
+
+            if (toastLiveExample) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+                toastBootstrap.show();
+            }
+        }   
+
+        const buttons = document.querySelectorAll('.des');
+
+        buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active')); // remove from all
+                    btn.classList.add('active'); // add to clicked
+                });
+            });
+
+        const mainImage = document.getElementById('main-image');
+        const buttonss = document.querySelectorAll('.t');
+
+        buttonss.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttonss.forEach(b => b.classList.remove('active')); // remove from all
+                    btn.classList.add('active'); // add to clicked
+                    mainImage.src = btn.src; 
+                });
+            });
+
+    </script>
+
+</body>
+
+</html>
+

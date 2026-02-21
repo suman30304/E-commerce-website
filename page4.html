@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <title>Ecommerce Web Design</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo-colored.png" alt="Brand"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex m-auto" role="search">
+                        <input class="form-control search-nav" type="search" placeholder="Search" aria-label="Search"/>
+                        <div class="btn-group drp-dwn">
+                            <button
+                                class="btn dropdown-toggle dd"
+                                type="button"
+                                id="triggerId"
+                                data-bs-toggle="dropdown"
+                                data-bs-display="static"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                All Categories
+                            </button>
+                            <div
+                                class="dropdown-menu dropdown-menu-start"
+                                aria-labelledby="triggerId"
+                            >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                <h6 class="dropdown-header">Section header</h6>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">After divider action</a>
+                            </div>
+                        </div>
+                        <button class="btn btn-nav" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Profile.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Message.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <img src="assets/Orders.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="page4.html">
+                                <img src="assets/Cart.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid border p-2">
+            <div class="container p-0">
+                <div class="row align-items-center">
+                    <!-- Left Navigation -->
+                    <div class="col-lg-8">
+                        <nav>
+                            <ul class="nav justify-content-center flex-wrap">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownCategories"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/Vector.png" alt=""> All Categories
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownCategories">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Hot offers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Gift boxes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#">Menu item</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownHelp"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Help
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownHelp">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right Options -->
+                    <div class="col-lg-4">
+                        <nav>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownLanguage"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        English, USD
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                                        <h6 class="dropdown-header">Language & currency</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/flag2.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, USD
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            Français, EUR
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            العربية، AED
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            English, GBP
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            中文, CNY
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="dropdownShipping"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                                        Ship to <img src="assets/flag1.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownShipping">
+                                        <h6 class="dropdown-header">Choose region</h6>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/US@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United States
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/AE@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Arab Emirates
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/FR@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            France
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/CN@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            China
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/GB@2x.png" alt="" style="width:20px; margin-right:8px;">
+                                            United Kingdom
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="u-45f6f351">
+
+        <!-- My cart section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <h3 class="u-b2e5c974">My cart <span id="item-count">(3)</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p-0">
+                        <div class="row">
+                            <!-- Items in the cart -->
+                            <div class="col-lg-9">
+                                <div class="col-md-12 sects" id="product-list">
+
+                                    <!-- Toast -->
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header">
+                                        <img class="rounded me-2" alt="...">
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                        Item saved
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <!-- 1 -->
+                                    <div class="row item-count cart-items">
+                                        <div class="col-md-9">
+                                            <div class="u-a733a4d0">
+                                                <img src="assets/Bitmap3.png" class="cart-imgs" alt="">
+                                            </div>
+                                            <div class="u-a733a4d0">
+                                                <p class="cart-txt1">T-shirts with multiple colors, for men and lady</p>
+                                                <p class="cart-txt2">Size: medium, Color: blue,  Material: Plastic <br> Seller: Artel Market</p>
+                                                <button class="cart-btn" onclick="remove_item(this)">
+                                                    <span class="cart-txt3 u-30defb71">Remove</span>
+                                                </button>
+                                                <button class="cart-btn liveToastBtn2 u-e63fffc6" onclick="save_later('T-shirts with multiple colors, for men and lady', '$78.99', 'assets/Bitmap3.png')">
+                                                    <span class="cart-txt3 u-ea73aba1">Save for later</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="justify-content-end d-flex u-2a20a410">$78.99</p>
+                                            <div class="dropdown justify-content-end d-flex u-07c308b0">
+                                                <button class="btn dropdown-toggle u-ab807bec" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                    QTY: 9
+                                                </button>
+                                                <div class="dropdown-menu text-center" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">1</a>
+                                                    <a class="dropdown-item" href="#">2</a>
+                                                    <a class="dropdown-item" href="#">3</a>
+                                                    <a class="dropdown-item" href="#">4</a>
+                                                    <a class="dropdown-item" href="#">5</a>
+                                                    <a class="dropdown-item" href="#">6</a>
+                                                    <a class="dropdown-item" href="#">7</a>
+                                                    <a class="dropdown-item" href="#">8</a>
+                                                    <a class="dropdown-item" href="#">9</a>
+                                                    <a class="dropdown-item" href="#">10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="row item-count cart-items">
+                                        <div class="col-md-9">
+                                            <div class="u-a733a4d0">
+                                                <img src="assets/image_262-removebg-preview.png" class="cart-imgs" alt="">
+                                            </div>
+                                            <div class="u-a733a4d0">
+                                                <p class="cart-txt1">T-shirts with multiple colors, for men and lady</p>
+                                                <p class="cart-txt2">Size: medium, Color: blue,  Material: Plastic <br> Seller: Artel Market</p>
+                                                <button onclick="remove_item(this)" class="cart-btn">
+                                                    <span class="cart-txt3 u-30defb71">Remove</span>
+                                                </button>
+                                                <button class="cart-btn liveToastBtn2 u-e63fffc6" onclick="save_later('T-shirts with multiple colors, for men and lady', '$39.00', 'assets/image_262-removebg-preview.png')">
+                                                    <span class="cart-txt3 u-ea73aba1">Save for later</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="justify-content-end d-flex u-2a20a410">$39.00</p>
+                                            <div class="dropdown justify-content-end d-flex u-07c308b0">
+                                                <button class="btn dropdown-toggle u-ab807bec" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                    QTY: 3
+                                                </button>
+                                                <div class="dropdown-menu text-center" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">1</a>
+                                                    <a class="dropdown-item" href="#">2</a>
+                                                    <a class="dropdown-item" href="#">3</a>
+                                                    <a class="dropdown-item" href="#">4</a>
+                                                    <a class="dropdown-item" href="#">5</a>
+                                                    <a class="dropdown-item" href="#">6</a>
+                                                    <a class="dropdown-item" href="#">7</a>
+                                                    <a class="dropdown-item" href="#">8</a>
+                                                    <a class="dropdown-item" href="#">9</a>
+                                                    <a class="dropdown-item" href="#">10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="row item-count cart-items">
+                                        <div class="col-md-9">
+                                            <div class="u-a733a4d0">
+                                                <img src="assets/image 942s.png" class="cart-imgs" alt="">
+                                            </div>
+                                            <div class="u-a733a4d0">
+                                                <p class="cart-txt1">T-shirts with multiple colors, for men and lady</p>
+                                                <p class="cart-txt2">Size: medium, Color: blue,  Material: Plastic <br> Seller: Artel Market</p>
+                                                <button onclick="remove_item(this)" class="cart-btn">
+                                                    <span class="cart-txt3 u-30defb71">Remove</span>
+                                                </button>
+                                                <button class="cart-btn liveToastBtn2 u-e63fffc6" onclick="save_later('T-shirts with multiple colors, for men and lady', '$170.50', 'assets/image 942s.png')">
+                                                    <span class="cart-txt3 u-ea73aba1">Save for later</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p class="justify-content-end d-flex u-2a20a410">$170.50</p>
+                                            <div class="dropdown justify-content-end d-flex u-07c308b0">
+                                                <button class="btn dropdown-toggle u-ab807bec" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                    QTY: 1
+                                                </button>
+                                                <div class="dropdown-menu text-center" aria-labelledby="triggerId">
+                                                    <a class="dropdown-item" href="#">1</a>
+                                                    <a class="dropdown-item" href="#">2</a>
+                                                    <a class="dropdown-item" href="#">3</a>
+                                                    <a class="dropdown-item" href="#">4</a>
+                                                    <a class="dropdown-item" href="#">5</a>
+                                                    <a class="dropdown-item" href="#">6</a>
+                                                    <a class="dropdown-item" href="#">7</a>
+                                                    <a class="dropdown-item" href="#">8</a>
+                                                    <a class="dropdown-item" href="#">9</a>
+                                                    <a class="dropdown-item" href="#">10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Remove all button -->
+                                    <div class="row">
+                                        <div class="col-md-6 u-84d7b951">
+                                            <a class="cart-btn2" href="page2.html">
+                                                <span class="cart-btn2-txt">&LeftArrow; Back to shop</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 u-1ccc02c4">
+                                            <button class="cart-btn3" id="remove-all" onclick="remove_all()">
+                                                <span class="cart-btn3-txt">Remove all</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Checkout -->
+                            <div class="col-lg-3">
+                                <div class="col-md-12 dis u-71c3c0e9">
+                                    <p class="u-bf6b6758">Have a coupon?</p>
+                                    <div class="u-381f7bf2">
+                                        <input class="u-747f51a5" id="inp" type="text" placeholder="Add a coupon">
+                                        <span class="u-3b2b1fcf">Apply</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 u-bb7291ce">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="u-bf6b6758">Subtotal:</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="u-2d228bc8">$1403.97</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="u-1aab2239">Discount:</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="u-ed39a5f9">- $60.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="u-bf6b6758">Tax:</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="u-5860b794">$14.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row u-689163cc">
+                                        <div class="col-md-6 u-71296b1d">
+                                            <div class="u-a6f218a0">
+                                                <h6 class="u-7f00c174">Total:</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 u-8d76abfb">
+                                            <div class="u-a6f218a0">
+                                                <h4 class="u-f65e3f52">$1357.97</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="u-df7b4b1a">
+                                                Checkout
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 u-074f6f50">
+                                            <img class="u-f0c11a87" src="assets/Logo.png" alt="">
+                                            <img class="u-f0c11a87" src="assets/Logo3.png" alt="">
+                                            <img class="u-552eefd7" src="assets/Logo2.png" alt="">
+                                            <img class="u-f0c11a87" src="assets/Shape.png" alt="">
+                                            <img class="u-f0c11a87" src="assets/image 21.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container dis">
+                <div class="row">
+                    <div class="col-md-9 p-0 u-ffbeea3c">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="u-d806c198">
+                                    <img class="u-c9da36df" src="assets/ðŸ”¹Icon Color.png" alt="">
+                                </div>
+                                <div class="u-d87ebd85">
+                                    <p class="u-114fcdcd">Secure payment</p>
+                                    <p class="u-ea01366c">Have you ever finally just </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="u-d806c198">
+                                    <img class="u-a213cc4c" src="assets/ðŸ”¹Icon Color 2.png" alt="">
+                                </div>
+                                <div class="u-d87ebd85">
+                                    <p class="u-114fcdcd">Customer support</p>
+                                    <p class="u-ea01366c">Have you ever finally just </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="u-d806c198">
+                                    <img class="u-b4efa037" src="assets/ðŸ”¹ Icon Color 3.png" alt="">
+                                </div>
+                                <div class="u-d87ebd85">
+                                    <p class="u-114fcdcd">Free delivery</p>
+                                    <p class="u-ea01366c">Have you ever finally just </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Save for later section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 sects">
+                        <h4 class="u-755e8a26">Saved for later</h4>
+                        <div class="col-md-12 u-8ecca844">
+                            <div class="row" id="product-list2">
+
+                                <!-- Toast -->
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="toast-header">
+                                        <img class="rounded me-2" alt="...">
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                        Item added succesfully
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 1 -->
+                                <div class="col-md-3 p-2">
+                                    <div class="col-md-12 save-item2">
+                                        <div class="col-md-12 col-3 u-45a0e725">
+                                            <img src="assets/image_32-removebg-preview.png" class="save-img" alt="">
+                                        </div>
+                                        <div class="col-md-12 col-9 save-item3">
+                                            <h4 class="u-68083a4f">$99.50</h4>
+                                            <p class="u-88db26c8">GoPro HERO6 4K Action Camera - Black</p>
+                                            <button class="cart-btn3 liveToastBtn move-to-cart-btn" onclick="add_item('GoPro HERO6 4K Action <br> Camera - Black', '$99.50', 'assets/image_32-removebg-preview.png')">
+                                                <span class="cart-btn3-txt"><img class="u-74117e1a" src="assets/Vector12.png" alt=""> Move to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="col-md-3 p-2">
+                                    <div class="col-md-12 save-item2">
+                                        <div class="col-md-12 u-45a0e725">
+                                            <img src="assets/image_22-removebg-preview.png" class="save-img" alt="">
+                                        </div>
+                                        <div class="col-md-12 save-item3">
+                                            <h4 class="u-68083a4f">$99.50</h4>
+                                            <p class="u-88db26c8">GoPro HERO6 4K Action Camera - Black</p>
+                                            <button class="cart-btn3 liveToastBtn move-to-cart-btn" onclick="add_item('GoPro HERO6 4K Action <br> Camera - Black', '$99.50', 'assets/image_22-removebg-preview.png')">
+                                                <span class="cart-btn3-txt"><img class="u-74117e1a" src="assets/Vector12.png" alt=""> Move to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-md-3 p-2">
+                                    <div class="col-md-12 save-item2">
+                                        <div class="col-md-12 u-45a0e725">
+                                            <img src="assets/image_35-removebg-preview2.png" class="save-img" alt="">
+                                        </div>
+                                        <div class="col-md-12 save-item3">
+                                            <h4 class="u-68083a4f">$99.50</h4>
+                                            <p class="u-88db26c8">GoPro HERO6 4K Action Camera - Black</p>
+                                            <button class="cart-btn3 liveToastBtn move-to-cart-btn" onclick="add_item('GoPro HERO6 4K Action <br> Camera - Black', '$99.50', 'assets/image_35-removebg-preview2.png')">
+                                                <span class="cart-btn3-txt"><img class="u-74117e1a" src="assets/Vector12.png" alt=""> Move to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="col-md-3 p-2">
+                                    <div class="col-md-12 save-item2">
+                                        <div class="col-md-12 u-45a0e725">
+                                            <img src="assets/image_34-removebg-preview.png" class="save-img u-800de481" alt="">
+                                        </div>
+                                        <div class="col-md-12 save-item3">
+                                            <h4 class="u-68083a4f">$99.50</h4>
+                                            <p class="u-88db26c8">GoPro HERO6 4K Action Camera - Black</p>
+                                            <button class="cart-btn3 liveToastBtn move-to-cart-btn" onclick="add_item('GoPro HERO6 4K Action <br> Camera - Black', '$99.50', 'assets/image_34-removebg-preview.png')">
+                                                <span class="cart-btn3-txt"><img class="u-74117e1a" src="assets/Vector12.png" alt=""> Move to cart</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Promo Banner -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="promo-banner">
+                        <div class="promo-text">
+                            <h2>Super discount on more than 100 USD</h2>
+                            <p>Have you ever finally just write dummy info</p>
+                        </div>
+                        <button class="promo-button">Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/logo-colored.png" alt="">
+                    <p class="u-07c308b0">Best information about the company gies here but now lorem ipsum is</p>
+                    <img src="assets/facebook3.png" class="p" alt="">
+                    <img src="assets/twitter3.png" class="p" alt="">
+                    <img src="assets/linkedin3.png" class="p" alt="">
+                    <img src="assets/instagram3.png" class="p" alt="">
+                    <img src="assets/youtube3.png" class="p" alt="">
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">About</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Partnership</h5>
+                    About us <br>
+                    Find store <br>
+                    Categories <br>
+                    Blogs <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">Information</h5>
+                    Help Center <br>
+                    Money Refund <br>
+                    SHipping <br>
+                    Contact us <br>
+                </div>
+                <div class="col-md-2 u-6f01f015">
+                    <h5 class="u-42bfb508">For users</h5>
+                    Login <br>
+                    Register <br>
+                    Settings <br>
+                    My Orders <br>
+                </div>
+                <div class="col-md-1 u-6f01f015">
+                    <h5 class="u-42bfb508">Get app</h5>
+                    <img src="assets/market-button-appstore.png" class="p u-36eb4ced" alt="">
+                    <img src="assets/market-button-playstore.png" class="p u-36eb4ced" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="u-e90cbe91">
+            <div class="container">
+                <div class="row p-4">
+                    <div class="col-md-6 align-self-center">
+                        <p class="u-e2b74ba6">&copy; 2023 Ecommerce</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown u-db3b3887">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/flag2.png" alt=""> English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        
+    <script src="js/main.js"></script>
+
+    <script>
+
+        function myFunction() {
+            save_later('T-shirts with multiple colors, for men and lady', '$170.50', 'assets/image34s.png')
+        }
+
+        const shouldRun = localStorage.getItem("runFunction");
+        const shouldRun2 = localStorage.getItem("runFunction2");
+
+        if (shouldRun2 === "true") {
+            myFunction()
+            localStorage.removeItem("runFunction2");
+        }
+
+        if (shouldRun === "true") {
+            const savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+
+            savedItems.forEach(item => {
+                save_later(item.title, item.price, item.imgurl);
+            });
+
+            localStorage.removeItem("runFunction");
+            localStorage.removeItem("savedItems");
+            localStorage.removeItem("save_later");
+        }
+
+        const toastTriggers = document.querySelectorAll('.liveToastBtn');
+        const toastLiveExample = document.getElementById('liveToast');
+
+        if (toastTriggers.length > 0 && toastLiveExample) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+
+        toastTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+            toastBootstrap.show();
+            });
+        });
+        }
+
+        const toastTriggers2 = document.querySelectorAll('.liveToastBtn2');
+        const toastLiveExample2 = document.getElementById('liveToast2');
+
+        if (toastTriggers.length > 0 && toastLiveExample2) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample2);
+
+        toastTriggers2.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+            toastBootstrap.show();
+            });
+        });
+        }
+
+        function updateItemCount() {
+            const items = document.querySelectorAll('.item-count');
+            const count = document.getElementById('item-count');
+            count.textContent = `(${items.length})`;
+        }
+
+        function remove_item(button) {
+            const item = button.closest('.item-count');
+            if (item) item.remove();
+            updateItemCount();
+        }
+
+        function remove_all() {
+            const items = document.querySelectorAll('.item-count');
+            items.forEach(item => item.remove());
+            updateItemCount();
+        }
+
+        function add_item(name, price, imageSrc) {
+            const container = document.getElementById('product-list');
+
+            const productHTML = `
+                <!-- 1 -->
+                    <div class="row item-count u-ed6c8421">
+                        <div class="col-md-9">
+                            <div class="u-a733a4d0">
+                                <img src="${imageSrc}" class="cart-imgs u-732c607b" alt="">
+                            </div>
+                            <div class="u-a733a4d0">
+                                <p class="cart-txt1">${name}</p>
+                                <p class="cart-txt2">Size: medium, Color: blue,  Material: Plastic <br> Seller: Artel Market</p>
+                                <button class="cart-btn" onclick="remove_item(this)">
+                                    <span class="cart-txt3 u-30defb71">Remove</span>
+                                </button>
+                                <button class="cart-btn liveToastBtn2 u-e63fffc6" onclick="save_later('${name}', '${price}', '${imageSrc}')">
+                                    <span class="cart-txt3 u-ea73aba1">Save for later</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="justify-content-end d-flex u-2a20a410">${price}</p>
+                            <div class="dropdown justify-content-end d-flex u-07c308b0">
+                                <button class="btn dropdown-toggle u-ab807bec" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    QTY: 9
+                                </button>
+                                <div class="dropdown-menu text-center" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">1</a>
+                                    <a class="dropdown-item" href="#">2</a>
+                                    <a class="dropdown-item" href="#">3</a>
+                                    <a class="dropdown-item" href="#">4</a>
+                                    <a class="dropdown-item" href="#">5</a>
+                                    <a class="dropdown-item" href="#">6</a>
+                                    <a class="dropdown-item" href="#">7</a>
+                                    <a class="dropdown-item" href="#">8</a>
+                                    <a class="dropdown-item" href="#">9</a>
+                                    <a class="dropdown-item" href="#">10</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `;
+
+            container.insertAdjacentHTML('afterbegin', productHTML);
+            updateItemCount();
+            }
+
+        function save_later(name, price, imageSrc) {
+            const container = document.getElementById('product-list2');
+
+            const productHTML = `
+                <!-- 1 -->
+                    <div class="col-md-3 p-2">
+                        <div class="col-md-12 save-item2">
+                            <div class="col-md-12 u-45a0e725">
+                                <img src="${imageSrc}" class="save-img" alt="">
+                            </div>
+                            <div class="col-md-12 save-item3">
+                                <h4 class="u-68083a4f">${price}</h4>
+                                <p class="u-88db26c8">${name}</p>
+                                <button class="cart-btn3 liveToastBtn u-b3f327d7" onclick="add_item('${name}', '${price}', '${imageSrc}')">
+                                    <span class="cart-btn3-txt"><img class="u-74117e1a" src="assets/Vector12.png" alt=""> Move to cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            `;
+
+            container.insertAdjacentHTML('beforeend', productHTML);
+            updateItemCount();
+            }
+       
+    </script>
+
+</body>
+
+</html>
+
