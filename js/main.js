@@ -151,5 +151,95 @@ document.querySelectorAll('.cont3').forEach(el => {
 document.querySelectorAll('.cont4').forEach(el => {
   el.className = view === 'grid' ? 'cont4' : 'cont4 col-md-' + count3;
 });
+/* Join Form Popup */
 
+// Join Now Form Toggle
+const joinBtn = document.getElementById("joinBtn");
+const joinForm = document.getElementById("joinForm");
 
+if (joinBtn && joinForm) {
+  joinBtn.addEventListener("click", () => {
+    joinForm.style.display =
+      joinForm.style.display === "block" ? "none" : "block";
+  });
+}
+/* ===============================
+   COUPON & CHECKOUT TOAST
+================================ */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Coupon Toast
+  const applyBtn = document.getElementById("applyCouponBtn");
+  const couponToastEl = document.getElementById("couponToast");
+
+  if (applyBtn && couponToastEl) {
+    const couponToast = new bootstrap.Toast(couponToastEl);
+
+    applyBtn.addEventListener("click", function () {
+      couponToast.show();
+    });
+  }
+
+  // Checkout Toast
+  const checkoutBtn = document.getElementById("checkoutBtn");
+  const checkoutToastEl = document.getElementById("checkoutToast");
+
+  if (checkoutBtn && checkoutToastEl) {
+    const checkoutToast = new bootstrap.Toast(checkoutToastEl);
+
+    checkoutBtn.addEventListener("click", function () {
+      checkoutToast.show();
+    });
+  }
+
+});
+/* ===============================
+   COUPON & CHECKOUT TOAST
+================================ */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Apply Coupon
+  const applyBtn = document.getElementById("applyCouponBtn");
+  const couponToastEl = document.getElementById("couponToast");
+
+  if (applyBtn && couponToastEl) {
+    const couponToast = new bootstrap.Toast(couponToastEl);
+
+    applyBtn.addEventListener("click", function () {
+      couponToast.show();
+    });
+  }
+
+  // Checkout
+  const checkoutBtn = document.getElementById("checkoutBtn");
+  const checkoutToastEl = document.getElementById("checkoutToast");
+
+  if (checkoutBtn && checkoutToastEl) {
+    const checkoutToast = new bootstrap.Toast(checkoutToastEl);
+
+    checkoutBtn.addEventListener("click", function () {
+      checkoutToast.show();
+    });
+  }
+
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+  const applyBtn = document.getElementById("applyCouponBtn");
+  const checkoutBtn = document.getElementById("checkoutBtn");
+
+  if (applyBtn) {
+    applyBtn.addEventListener("click", function () {
+      alert("Apply coupon done");
+    });
+  }
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", function () {
+      alert("Checkout done");
+    });
+  }
+
+});
