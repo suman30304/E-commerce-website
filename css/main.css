@@ -1833,3 +1833,61 @@ form input[type="email"] {
   white-space: nowrap;
   padding: 6px 16px;
 }
+/* Overlay Styling */
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  animation: popUp 0.3s ease;
+}
+
+@keyframes popUp {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Page 3 - Related Products Hover Effect */
+
+.related-card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover Animation */
+.related-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: 1px solid #127fff;
+}
+
+/* Image zoom effect */
+.related-card img {
+  transition: transform 0.25s ease;
+}
+
+.related-card:hover img {
+  transform: scale(1.05);
+}
