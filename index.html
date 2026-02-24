@@ -55,28 +55,29 @@
                         </div>
                         <button class="btn btn-nav" type="submit">Search</button>
                     </form>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                                <img src="assets/Profile.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                                <img src="assets/Message.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">
-                                <img src="assets/Orders.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="page4.html">
-                                <img src="assets/Cart.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="header-actions d-flex align-items-center ms-auto">
+
+  <a href="#" class="action-item">
+    <span>👤</span>
+    <small>Profile</small>
+  </a>
+
+  <a href="#" class="action-item">
+    <span>💬</span>
+    <small>Message</small>
+  </a>
+
+  <a href="#" class="action-item">
+    <span>❤️</span>
+    <small>Orders</small>
+  </a>
+
+  <a href="page4.html" class="action-item">
+    <span>🛒</span>
+    <small>My Cart</small>
+  </a>
+
+</div>
                 </div>
             </div>
         </nav>
@@ -290,16 +291,29 @@
                                     </div>
                                     <div class="col-md-12 u-5c7efbdd">
                                         <div class="row">
-                                            <div class="btn btn-primary align-items-center u-ac3fd8d4">
-                                                <p class="u-98891ad3">Join now</p>
-                                            </div>
+                                            <div class="join-wrapper">
+
+  <div class="btn btn-primary align-items-center u-ac3fd8d4 join-btn">
+    Join now
+  </div>
+
+  <!-- Overlay Form -->
+  <div class="join-overlay">
+    <h6>Create Account</h6>
+
+    <input type="text" placeholder="Name" class="form-control mb-2">
+    <input type="email" placeholder="Email" class="form-control mb-2">
+    <input type="password" placeholder="Password" class="form-control mb-2">
+
+    <button class="btn btn-success w-100">Register</button>
+  </div>
+
+</div>
                                         </div>
                                         <div class="row u-84d7b951">
-                                            <div class="btn btn-light align-items-center">
-                                                <p class="u-fbde1c7a">
-                                                    Login
-                                                </p>
-                                            </div>
+                                            <div class="btn btn-light align-items-center login-btn">
+  Login
+</div>
                                         </div>
                                     </div>
                                 </div>
