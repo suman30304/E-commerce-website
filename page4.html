@@ -22,7 +22,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                    <a class="navbar-brand"><img src="assets/logo-colored.png" alt="Brand"></a>
+                    <a class="navbar-brand"><a href="index.html">
+  <img src="assets/logo-colored.png" alt="Brand">
+</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -483,7 +485,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="u-d806c198">
-                                    <img class="u-c9da36df" src="assets/ðŸ”¹Icon Color.png" alt="">
+                                    <img class="u-c9da36df" src="assets/Icon Color.png" alt="">
                                 </div>
                                 <div class="u-d87ebd85">
                                     <p class="u-114fcdcd">Secure payment</p>
@@ -492,7 +494,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="u-d806c198">
-                                    <img class="u-a213cc4c" src="assets/ðŸ”¹Icon Color 2.png" alt="">
+                                    <img class="u-a213cc4c" src="assets/Icon Color 2.png" alt="">
                                 </div>
                                 <div class="u-d87ebd85">
                                     <p class="u-114fcdcd">Customer support</p>
@@ -501,7 +503,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="u-d806c198">
-                                    <img class="u-b4efa037" src="assets/ðŸ”¹ Icon Color 3.png" alt="">
+                                    <img class="u-b4efa037" src="assets/Icon Color 3.png" alt="">
                                 </div>
                                 <div class="u-d87ebd85">
                                     <p class="u-114fcdcd">Free delivery</p>
@@ -848,60 +850,69 @@
             }
        
     </script>
-    <!-- Toast Container -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <!-- Overlay Popup -->
+<div id="customOverlay" style="
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.6);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+">
 
-  <!-- Coupon Toast -->
-  <div id="couponToast" class="toast" role="alert">
-    <div class="toast-header">
-      <strong class="me-auto">System</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-    </div>
-    <div class="toast-body">
-      ✅ Coupon Applied Successfully!
-    </div>
+  <div style="
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    width:300px;
+    text-align:center;
+  ">
+
+    <h5 id="overlayText">Message</h5>
+
+    <button onclick="closeOverlay()" 
+      class="btn btn-success mt-3">
+      OK
+    </button>
+
   </div>
-
-  <!-- Checkout Toast -->
-  <div id="checkoutToast" class="toast" role="alert">
-    <div class="toast-header">
-      <strong class="me-auto">System</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-    </div>
-    <div class="toast-body">
-      ✅ Checkout Completed!
-    </div>
-  </div>
-
 </div>
-<!-- Toast Container -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+<script>
+  // Show popup
+  function showOverlay(msg) {
+    document.getElementById("overlayText").innerText = msg;
+    document.getElementById("customOverlay").style.display = "flex";
+  }
 
-  <!-- Coupon Toast -->
-  <div id="couponToast" class="toast" role="alert">
-    <div class="toast-header">
-      <strong class="me-auto">Message</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-    </div>
-    <div class="toast-body text-success">
-      ✅ Apply coupon done
-    </div>
-  </div>
+  // Close popup
+  function closeOverlay() {
+    document.getElementById("customOverlay").style.display = "none";
+  }
 
-  <!-- Checkout Toast -->
-  <div id="checkoutToast" class="toast" role="alert">
-    <div class="toast-header">
-      <strong class="me-auto">Message</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-    </div>
-    <div class="toast-body text-primary">
-      ✅ Checkout done
-    </div>
-  </div>
+  // Button Events
+  document.addEventListener("DOMContentLoaded", function () {
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+    const applyBtn = document.getElementById("applyCouponBtn");
+    const checkoutBtn = document.getElementById("checkoutBtn");
+
+    if (applyBtn) {
+      applyBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        showOverlay("Coupon has been applied successfully!");
+      });
+    }
+
+    if (checkoutBtn) {
+      checkoutBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        showOverlay("Checkout has been completed!");
+      });
+    }
+
+  });
+</script>
 
 </body>
 
