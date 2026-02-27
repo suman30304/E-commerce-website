@@ -1891,3 +1891,63 @@ form input[type="email"] {
 .related-card:hover img {
   transform: scale(1.05);
 }
+/* ================= MOBILE HEADER + DRAWER FIX ================= */
+@media (max-width: 991px) {
+
+  /* Hide desktop search bar (we use drawer search instead) */
+  .navbar form[role="search"] {
+    display: none !important;
+  }
+
+  /* Hide desktop header icon row on mobile */
+  .header-actions {
+    display: none !important;
+  }
+
+  /* Hide second-line desktop menu bar on mobile */
+  .container-fluid.border.p-2 {
+    display: none !important;
+  }
+
+  /* Prevent collapsed navbar content from showing;
+     we rely on offcanvas drawer instead. */
+  .navbar .navbar-collapse {
+    display: none !important;
+  }
+}
+
+/* Mobile drawer icon row styling */
+.mobile-header-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mobile-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #212529;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-action .icon {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.mobile-action .label {
+  font-size: 12px;
+}
+
+.mobile-action:hover {
+  background-color: #e7f1ff;
+  transform: translateY(-2px);
+}
