@@ -476,7 +476,7 @@ body {
       rgba(79,124,255,0.95),
       rgba(154,215,230,0.85)
     ),
-    url("assets/Image/backgrounds/Group 982.png");
+    url("assets/image/backgrounds/Group 982.png");
 
   background-size: cover;
   background-position: center;
@@ -1381,4 +1381,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 
