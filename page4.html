@@ -25,7 +25,11 @@
                     <a class="navbar-brand"><a href="index.html">
   <img src="assets/logo-colored.png" alt="Brand">
 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileNavDrawer"
+                        aria-controls="mobileNavDrawer"
+                        aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -83,6 +87,67 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Mobile drawer navigation (offcanvas) -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileNavDrawer"
+            aria-labelledby="mobileNavDrawerLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavDrawerLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Mobile search -->
+                <form class="mb-3" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search products" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Go</button>
+                    </div>
+                </form>
+
+                <!-- Quick links (categories / menu) -->
+                <div class="list-group mb-3">
+                    <a href="page2.html" class="list-group-item list-group-item-action">
+                        All categories
+                    </a>
+                    <a href="page2.html" class="list-group-item list-group-item-action">
+                        Hot offers
+                    </a>
+                    <a href="page2.html" class="list-group-item list-group-item-action">
+                        Gift boxes
+                    </a>
+                    <a href="page2.html" class="list-group-item list-group-item-action">
+                        Projects
+                    </a>
+                    <a href="page2.html" class="list-group-item list-group-item-action">
+                        Menu item
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        Help & Support
+                    </a>
+                </div>
+
+                <!-- Profile / Messages / Orders / Cart icons -->
+                <div class="mobile-header-actions">
+                    <a href="#" class="mobile-action">
+                        <span class="icon">👤</span>
+                        <span class="label">Profile</span>
+                    </a>
+                    <a href="#" class="mobile-action">
+                        <span class="icon">💬</span>
+                        <span class="label">Message</span>
+                    </a>
+                    <a href="#" class="mobile-action">
+                        <span class="icon">❤️</span>
+                        <span class="label">Orders</span>
+                    </a>
+                    <a href="page4.html" class="mobile-action">
+                        <span class="icon">🛒</span>
+                        <span class="label">My Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <div class="container-fluid border p-2">
             <div class="container p-0">
